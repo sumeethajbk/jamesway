@@ -1,0 +1,24 @@
+:root {
+    --white: #ffffff;
+    --white-15: rgb(255 255 255 / 15%);
+    --white-25: rgb(255 255 255 / 25%);
+    --white-50: rgb(255 255 255 / 50%);
+    --white-60: rgb(255 255 255 / 60%);
+    --white-70: rgb(255 255 255 / 70%);
+    --white-75: rgb(255 255 255 / 75%);
+    --white-80: rgb(255 255 255 / 80%);
+    --white-90: rgb(255 255 255 / 90%);
+    --heading: #⁨2b2c2d;
+    --body-text: #2b2c2d;
+    --anchor: #002677;
+    --anchor-hover: #000000;
+    --dark: #25282A;
+    --yellow: #ffb81c;
+    --light-blue:#f2f4f8;
+    --brandbook-gray: #b2b4b2;
+    --brandbook-gray-light: #d2d2d2;
+    --navy: #002677;
+    --navy-light:#00277c; 
+    --navy-dark:#00164d;
+    --light-grey: #cacbcc;
+}
