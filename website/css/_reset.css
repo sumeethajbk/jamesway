@@ -117,10 +117,10 @@ input[type="submit"]:hover {box-shadow: none; transform: none;}
 
 
 
-::-webkit-input-placeholder {color: var(--brand-green)!important; font-family:"FK Grotesk Neue", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
-:-moz-placeholder {color: var(--brand-green)!important; font-family:"FK Grotesk Neue", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
-::-moz-placeholder {color: var(--brand-green)!important; font-family:"FK Grotesk Neue", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
-:-ms-input-placeholder {color: var(--brand-green)!important; font-family:"FK Grotesk Neue", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+::-webkit-input-placeholder {color: var(--dark)!important; font-family:'Neue Haas Unica Pro', sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+:-moz-placeholder {color: var(--dark)!important; font-family:'Neue Haas Unica Pro', sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+::-moz-placeholder {color: var(--dark)!important; font-family:'Neue Haas Unica Pro', sans-serif; opacity: 1!important; font-size: 0.875rem!important; overflow: visible;}
+:-ms-input-placeholder {color: var(--dark)!important; font-family:'Neue Haas Unica Pro', sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
 
 
 embed, iframe, object, video {margin-bottom: 7px; max-width: 100%; border-radius: 0;}

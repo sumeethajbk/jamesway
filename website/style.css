@@ -242,11 +242,11 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display: block;}
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:0 !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; top: auto; bottom: -17px; position:absolute;}
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
-.frm_forms .frm_form_fields .frm_form_field{margin-bottom:20px; position: relative; clear: both;}
+.frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
 
-.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 1rem; line-height: 1.4; padding: 0; text-indent: inherit; font-weight: normal; color: var(--base-foreground); z-index: 1;}
-.frm_forms .frm_form_fields .frm_form_field label.frm_primary_label{display: none;}
+.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 1rem !important; line-height: 24px; text-indent: inherit; font-weight: 700 !important; color: var(--dark); font-family: 'Neue Haas Unica Pro', sans-serif !important; margin-bottom: 4px;}
+/* .frm_forms .frm_form_fields .frm_form_field label.frm_primary_label{display: none;} */
 
 /* Radio */
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio .frm_error {right: inherit !important; left: 0; text-align: left !important; top: inherit; margin-top: 6px;}
@@ -265,7 +265,7 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 
 
 /* Input */
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "FK Grotesk Neue", sans-serif; font-weight: bold; display: block; font-size: 1rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: transparent!important; color: var(--brand-blue)!important; border:1px solid var(--brand-green)!important; padding:14px 16px 14px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 0;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: bold; display: block; font-size: 0.875rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--white) !important; color: var(--dark); padding: 16px 16px 16px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 10px;}
 body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--brand-blue)!important; border-color: var(--brand-mint)!important;}
 .frm_forms .frm_form_fields select {color: var(--brand-green)!important;}
 
@@ -290,8 +290,8 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 
 /* Form Field */
 .form-field {position:relative; margin-bottom:20px;}
-.frm_half {width:calc(50% - 10px); float: left; clear: none!important;}
-.frm_first {margin-right:20px;}
+.frm_half {width:calc(50% - 20px); float: left; clear: none!important;}
+.frm_first {margin-right:40px;}
 .frm_last {float: right; margin-left: auto;}
 .frm_full {margin-right: 0;}
 
@@ -300,7 +300,7 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 .frm_forms .frm_message, .frm_forms .frm_success_style {margin: 20px 0 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
 .frm_forms .frm_message p {color: var(--base-foreground); text-align: center; font-size: 1rem; line-height: 1.5; margin-bottom: 0;}
 
-.default_form {background: var(--white); clear: both; width:100%; padding: 40px 64px 64px 40px; clip-path: var(--path-24);}
+.default_form { clear: both; width:100%; padding: 0; clip-path: var(--path-24);}
 .default_form .frm_forms .frm_filed_wrapper .frm_html_container {flex:1; opacity: 0.45; color: var(--body-text);}
 
 /* Bg form */

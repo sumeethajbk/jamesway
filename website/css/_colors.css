@@ -8,7 +8,7 @@
     --white-75: rgb(255 255 255 / 75%);
     --white-80: rgb(255 255 255 / 80%);
     --white-90: rgb(255 255 255 / 90%);
-    --heading: #⁨2b2c2d;
+    --heading: #2b2c2d;
     --body-text: #2b2c2d;
     --anchor: #002677;
     --anchor-hover: #000000;
@@ -21,4 +21,6 @@
     --navy-light:#00277c; 
     --navy-dark:#00164d;
     --light-grey: #cacbcc;
+
+    --grey-dim: rgba(37, 40, 42, 0.5)
 }
