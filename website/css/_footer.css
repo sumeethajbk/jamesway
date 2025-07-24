@@ -7,11 +7,11 @@ footer#main_footer .footer li a:hover {color: var(--yellow);}
 
 /* Footer Top */
 footer#main_footer .footer_top {clear: both; position: relative; display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; margin: 0 0 40px 0;}
-footer#main_footer .footer_top .footer_lt {flex:1;}
+footer#main_footer .footer_top .footer_lt {flex:1; margin-top: -1px;}
 footer#main_footer .footer_top .footer_lt ul {margin: 0; font-size: 0; display: flex; flex-wrap: wrap; gap:10px 48px;}
-footer#main_footer .footer_top .footer_lt ul li:after {content: ""; position: absolute; right: -24px; top: 0; display: inline-block; width: 1px; height: 22px; background: var(--white-25);}
+footer#main_footer .footer_top .footer_lt ul li:after {content: ""; position: absolute; right: -25px; top: 0; display: inline-block; width: 1px; height: 22px; background: var(--white-25);}
 footer#main_footer .footer_top .footer_lt ul li:last-child:after {display: none;}
-footer#main_footer .footer_top .footer_lt ul li {font-weight: 500; line-height: 1.22; display: inline-block; font-size: 1.125rem; margin: 0;}
+footer#main_footer .footer_top .footer_lt ul li {font-weight: 500; line-height: 1.22; display: inline-block; font-size: 1.125rem; margin: 0; letter-spacing: 0.2px;}
 
 footer#main_footer .footer_top .footer_rt {margin-top: auto; width: 50%; text-align: right;}
 footer#main_footer .footer_top .footer_rt .ftr-sm {clear: both; font-size: 0;}
@@ -34,7 +34,7 @@ footer#main_footer .footer_middle .footer-menu:nth-child(3) {width: 14.0625%;}
 footer#main_footer .footer_middle .footer-menu:nth-child(4) {width: 18.359375%;}
 footer#main_footer .footer_middle .footer-menu:nth-child(5) {width: 7.734375%;}
 
-footer#main_footer .footer-menu > ul > li:first-of-type {color: var(--light-grey); text-transform: uppercase; font-size: 0.875rem; font-weight:900; line-height: 1.57; letter-spacing: 1.4px; font-family: 'Neue Haas Unica', sans-serif;}
+footer#main_footer .footer-menu > ul > li:first-of-type, footer#main_footer .footer-menu > ul > li:first-of-type > a {color: var(--light-grey); text-transform: uppercase; font-size: 0.875rem; font-weight:900; line-height: 1.57; letter-spacing: 1.4px; font-family: 'Neue Haas Unica', sans-serif;}
 footer#main_footer .footer_middle .footer-menu ul.sub-menu li {font-size: 0.875rem; margin: 10px 0 0 0; font-weight: 400; text-transform: none; line-height: 1.57; letter-spacing: normal;}
 footer#main_footer .footer-menu ul li > a:hover, 
 footer#main_footer .footer-menu ul li.current_page_parent > a, 

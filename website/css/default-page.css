@@ -1,6 +1,6 @@
 @import url("_hero-banner.css");
 @import url("_accordion.css");
-@import url("_related-blog.css");
+@import url("_signup-module.css");
 @import url("_cta-module.css");
 
 .general-default-article-section {float: left; width: 100%; padding:76px 0 42px 0; position: relative; z-index: 1;}
