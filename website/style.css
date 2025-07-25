@@ -16,24 +16,53 @@ Text Domain:Jamesway
 @import url("css/_header.css");
 @import url("css/_footer.css");
 
-@font-face {font-family: 'Neue Haas Unica'; 
-    src: url('fonts/NeueHaasUnica-Regular.woff2') format('woff2'), url('fonts/NeueHaasUnica-Regular.woff') format('woff'), url('fonts/NeueHaasUnica-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; font-display: swap;}
 
-@font-face {font-family: 'Neue Haas Unica ExtBd'; 
-    src: url('fonts/NeueHaasUnica-ExtraBold.woff2') format('woff2'), url('fonts/NeueHaasUnica-ExtraBold.woff') format('woff'), url('fonts/NeueHaasUnica-ExtraBold.ttf') format('truetype'); font-weight: bold; font-style: normal; font-display: swap;}
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('fonts/neuehaasunicapro-black-webfont.woff2') format('woff2'),
+         url('fonts/neuehaasunicapro-black-webfont.woff') format('woff'),
+         url('fonts/neuehaasunicapro-black-webfont.ttf') format('truetype');
+    font-weight: 900; font-style: normal;}
 
-@font-face {font-family: 'Neue Haas Unica Pro'; 
-    src: url('fonts/NeueHaasUnicaPro-Heavy.woff2') format('woff2'), url('fonts/NeueHaasUnicaPro-Heavy.woff') format('woff'), url('fonts/NeueHaasUnicaPro-Heavy.ttf') format('truetype'); font-weight: 900; font-style: normal; font-display: swap;}
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('fonts/neuehaasunicapro-bold-webfont.woff2') format('woff2'),
+         url('fonts/neuehaasunicapro-bold-webfont.woff') format('woff'),
+         url('fonts/neuehaasunicapro-bold-webfont.ttf') format('truetype');
+    font-weight: 700; font-style: normal;}
 
-@font-face {font-family: 'Neue Haas Unica ExtBd'; 
-    src: url('fonts/NeueHaasUnica-ExtraBoldItalic.woff2') format('woff2'), url('fonts/NeueHaasUnica-ExtraBoldItalic.woff') format('woff'), url('fonts/NeueHaasUnica-ExtraBoldItalic.ttf') format('truetype'); font-weight: bold; font-style: italic; font-display: swap;}
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('fonts/neuehaasunicapro-heavy-webfont.woff2') format('woff2'),
+         url('fonts/neuehaasunicapro-heavy-webfont.woff') format('woff'),
+         url('fonts/neuehaasunicapro-heavy-webfont.ttf') format('truetype');
+    font-weight: 800; font-style: normal;}
 
-@font-face {font-family: 'Neue Haas Unica'; 
-    src: url('fonts/NeueHaasUnica-Black.woff2') format('woff2'), url('fonts/NeueHaasUnica-Black.woff') format('woff'), url('fonts/NeueHaasUnica-Black.ttf') format('truetype'); font-weight: 900; font-style: normal; font-display: swap;}
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('fonts/neuehaasunicapro-medium-webfont.woff2') format('woff2'),
+         url('fonts/neuehaasunicapro-medium-webfont.woff') format('woff'),
+         url('fonts/neuehaasunicapro-medium-webfont.ttf') format('truetype');
+    font-weight: 500; font-style: normal;}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('fonts/neuehaasunicapro-regular-webfont.woff2') format('woff2'),
+         url('fonts/neuehaasunicapro-regular-webfont.woff') format('woff'),
+         url('fonts/neuehaasunicapro-regular-webfont.ttf') format('truetype');
+    font-weight: 400; font-style: normal;}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('fonts/neuehaasunicapro-xblack-webfont.woff2') format('woff2'),
+         url('fonts/neuehaasunicapro-xblack-webfont.woff') format('woff'),
+         url('fonts/neuehaasunicapro-xblack-webfont.ttf') format('truetype');
+    font-weight: 1000; font-style: normal;}
+
 
 
 /*-- customized styles starts here --*/
-body {font-family:"Neue Haas Unica", sans-serif; color:var(--body-text); font-size:1.125rem; line-height:1.44; font-weight:normal; font-style:normal; overflow-x:hidden; background:var(--white); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch; padding: 0;}
+body {font-family: 'Neue Haas Unica Pro', sans-serif; color:var(--body-text); font-size:1.125rem; line-height:1.44; font-weight:normal; font-style:normal; overflow-x:hidden; background:var(--white); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch; padding: 0;}
 #main {overflow:hidden; position:relative; float:left; width:100%; flex:1 0 auto;}
 #mainContent {clear:both; position:relative; float:left; width:100%; padding:99px 0 0 0;}
 .no-banner #mainContent {padding: 60px 0 80px 0;}
@@ -267,14 +296,14 @@ body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields t
 
 .frm_forms .frm_form_fields textarea {min-height:160px; padding: 17px;}
 
-.frm_forms .frm_form_fields .selectBox-dropdown{background-color: transparent; color: var(--brand-green); border:solid 1px var(--brand-green); padding:14px 46px 14px 16px; font-family: "FK Grotesk Neue", sans-serif; font-weight: 700; text-transform: none;}
+.frm_forms .frm_form_fields .selectBox-dropdown{background-color: transparent; color: var(--brand-green); border:solid 1px var(--brand-green); padding:14px 46px 14px 16px; font-family: "Neue Haas Unica Pro", sans-serif; font-weight: 700; text-transform: none;}
 .frm_forms .frm_form_fields .selectBox-dropdown:focus, .frm_forms .frm_form_fields .selectBox-dropdown:hover {border-color: var(--brand-mint);}
 
 body .frm_forms .frm_form_fields input.input-has-value, body .frm_forms .frm_form_fields textarea.input-has-value {border:1px solid transparent!important; box-shadow: 6px 6px 0px 0px #3364FA, 5px 5px 0px 0px var(--brand-blue), 4px 4px 0px 0px var(--brand-blue), 3px 3px 0px 0px var(--brand-blue), 2px 2px 0px 0px var(--brand-blue), 1px 1px 0px 0px var(--brand-blue)!important;}
 
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
-body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin: 0 !important;; vertical-align: middle!important; cursor: pointer!important; background-color: var(--base-foreground)!important; position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center!important; color: var(--white)!important; font-family: "FK Grotesk Neue", sans-serif; text-decoration: none; display: inline-block; font-size:1rem!important; font-weight: bold!important; line-height: 100%!important; padding:16px!important; width: 100%!important; border-radius: 0 !important; border: 0 none !important;}
+body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin: 0 !important;; vertical-align: middle!important; cursor: pointer!important; background-color: var(--base-foreground)!important; position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center!important; color: var(--white)!important; font-family: "Neue Haas Unica Pro", sans-serif; text-decoration: none; display: inline-block; font-size:1rem!important; font-weight: bold!important; line-height: 100%!important; padding:16px!important; width: 100%!important; border-radius: 0 !important; border: 0 none !important;}
 body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--white)!important; background-color: var(--base-foreground)!important; transform: translate(4px, -4px); box-shadow: -4px 4px 0px 0px var(--brand-mint), -3px 3px 0px 0px var(--brand-mint), -2px 2px 0px 0px var(--brand-mint), -1px 1px 0px 0px var(--brand-mint);}
 
 
