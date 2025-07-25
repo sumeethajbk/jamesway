@@ -96,21 +96,11 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 .search-submit {display: none;} 
 
 /* Default */
-button, .button  {display: inline-block; font-size:1rem; font-weight: bold; line-height: 100%; padding:16px; vertical-align: middle; cursor: pointer; border:0 none; background-color: var(--base-foreground); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--white); font-family:"FK Grotesk Neue", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius: 0; outline: 0; box-sizing: border-box;}
-button:hover, .button:hover {color: var(--white); background-color: var(--base-foreground); transform: translate(4px, -4px); box-shadow: -4px 4px 0px 0px var(--brand-mint), -3px 3px 0px 0px var(--brand-mint), -2px 2px 0px 0px var(--brand-mint), -1px 1px 0px 0px var(--brand-mint);}
-button:focus, .button:focus, button:active, .button:active {background-color: var(--base-foreground); color: var(--white);}
+button, .button  {display: inline-block; font-size:1.125rem; font-weight: 700; line-height:1.33; padding:8px 12px; vertical-align: middle; cursor: pointer; border:0 none; background-color: var(--button); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--white); font-family:"Neue Haas Unica Pro", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius:10px; outline: 0; box-sizing: border-box; text-transform:none;}
+button:hover, .button:hover {color: var(--navy); background-color: var(--button-hover);}
+button:focus, .button:focus, button:active, .button:active {background-color: var(--button); color: var(--navy);}
 
-/* Default Reverse */
-button.reverse, .button.reverse {background-color:var(--brand-mint); color: var(--brand-green);}
-button.reverse:hover, .button.reverse:hover {color: var(--brand-green); background-color: var(--brand-mint); box-shadow: -4px 4px 0px 0px var(--white), -3px 3px 0px 0px var(--white), -2px 2px 0px 0px var(--white), -1px 1px 0px 0px var(--white);}
-button.reverse:focus, .button.reverse:focus, button.reverse:active, .button.reverse:active {background-color:var(--brand-mint); color: var(--brand-green);}
 
-/* Button White */
-.white-btn {font-size: 1.75rem; font-weight: 900; letter-spacing: 0.56px; line-height: 1; font-family: 'Correct XXX Condensed'; text-transform: uppercase; color: var(--brand-green); background: var(--white); padding: 22px 20px 18px 20px; min-width: 215px; text-align: center; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out;}
-
-/* Big Green Button */
-.big-green {text-transform: uppercase; padding:8px 15px 2px 16px; background: var(--brand-green); color: var(--brand-mint); font-weight: 900; font-family: 'Correct XXX Condensed', sans-serif; font-size: 4.5rem; letter-spacing: 1.44px;}
-.big-green:focus, .big-green:active {background: var(--brand-green); color: var(--brand-mint);}
 
 input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:15px; top:0; bottom: 0; padding: 0 !important; width: 18px; height: 17px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1; box-shadow: none !important; transform: none !important;}
 input[type="submit"]:hover {box-shadow: none; transform: none;}
