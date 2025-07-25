@@ -9,7 +9,7 @@
 .signup-module .signup-form {position: relative}
 .signup-module .signup-form .disclaimer {font-size:0.875rem; line-height:1.57; font-weight: 500;}
 
-.signup-module .signup-form input {font-size:0.875rem; font-weight: normal; line-height: 1.29; padding: 15px 160px 14px 16px; border-radius: 10px; background: var(--white)!important; font-family:"Neue Haas Unica", sans-serif;}
+.signup-module .signup-form input {font-size:0.875rem; font-weight: normal; line-height: 1.29; padding: 15px 160px 14px 16px; border-radius: 10px; background: var(--white)!important; font-family:"Neue Haas Unica Pro", sans-serif;}
 
 .signup-module .signup-form .frm_forms .form-field {margin-bottom:16px;}
 .signup-module .signup-form .frm_forms .form-field label {display: none}
@@ -17,10 +17,10 @@
 .signup-module .signup-form .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {top: 70px;}
 .signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--white);}
 
-.signup-module ::-webkit-input-placeholder {font-size: 0.875rem!important; font-weight: normal; font-family:"Neue Haas Unica", sans-serif;}
-.signup-module:-moz-placeholder {font-size: 0.875rem!important; font-weight: normal;font-family:"Neue Haas Unica", sans-serif;}
-.signup-module ::-moz-placeholder {font-size: 0.875rem!important; font-weight: normal;font-family:"Neue Haas Unica", sans-serif;}
-.signup-module :-ms-input-placeholder {font-size: 0.875rem!important; font-weight: normal;font-family:"Neue Haas Unica", sans-serif;}
+.signup-module ::-webkit-input-placeholder {font-size: 0.875rem!important; font-weight: normal; font-family:"Neue Haas Unica Pro", sans-serif;}
+.signup-module:-moz-placeholder {font-size: 0.875rem!important; font-weight: normal;font-family:"Neue Haas Unica Pro", sans-serif;}
+.signup-module ::-moz-placeholder {font-size: 0.875rem!important; font-weight: normal;font-family:"Neue Haas Unica Pro", sans-serif;}
+.signup-module :-ms-input-placeholder {font-size: 0.875rem!important; font-weight: normal;font-family:"Neue Haas Unica Pro", sans-serif;}
 
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
