@@ -1,0 +1,20 @@
+.location-section{width: 100%; clear: both; position: relative;}
+.location-wrap{padding: 80px 0 56px;}
+.location-main{gap: 80px;}
+.location-left { flex: 0 0 350px; }
+.location-left h2{margin-bottom: 16px;}
+.location-left p{font-size: 16px; font-weight: 400; margin-bottom: 40px;}
+.response-team{padding: 24px 24px 24px; background-color: var(--light-blue); border-radius: 20px;}
+.response-team .optional-text{color: var(--dark-70); letter-spacing: 0.7px; font-size: 0.875rem; font-weight: 700; font-family: 'Neue Haas Unica Pro', sans-serif; margin-bottom: 5px;}
+.response-team .h4{margin-bottom: 10px;}
+.response-team .phone-link{color: var(--dark); font-weight: 700; font-family: "Neue Haas Unica Pro", sans-serif; font-size: 1.5rem;}
+.location-right{flex: 0 0 calc(100% - 430px);}
+.location-rt{gap:60px  40px}
+.location-list{flex: 0 0 calc(33.33% - 27px)}
+.location-list span.dark-wt{font-size: 1.125rem; display: block; font-family: "Neue Haas Unica Pro", sans-serif; margin-bottom: 16px;}
+.location-list p{font-size: 1rem; margin-bottom: 16px;}
+.location-img{width: 56px; height: 56px; margin-bottom: 16px;}
+.location-links{margin: 0;}
+.location-links > li{margin-bottom: 0;}
+.location-links > li a{font-size: 16px; font-weight: 700; font-family: "Neue Haas Unica Pro", sans-serif;}
+.location-links > li a span{color: var(--dark);  }

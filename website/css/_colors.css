@@ -22,5 +22,6 @@
     --navy-dark:#00164d;
     --light-grey: #cacbcc;
 
-    --grey-dim: rgba(37, 40, 42, 0.5)
+    --dark-50: rgba(37, 40, 42, 0.5);
+    --dark-70: rgba(37, 40, 42, 0.7);
 }
