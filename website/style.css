@@ -53,7 +53,7 @@ Text Domain:Jamesway
     font-weight: 400; font-style: normal;}
 
 @font-face {
-    font-family: 'neue_haas_unica_proextrablack';
+    font-family: 'Neue Haas Unica Pro';
     src: url('fonts/neuehaasunicapro-xblack-webfont.woff2') format('woff2'),
          url('fonts/neuehaasunicapro-xblack-webfont.woff') format('woff'),
          url('fonts/neuehaasunicapro-xblack-webfont.ttf') format('truetype');
