@@ -21,13 +21,9 @@
     --navy-light:#00277c; 
     --navy-dark:#00164d;
     --light-grey: #cacbcc;
-<<<<<<< HEAD
-
     --dark-50: rgba(37, 40, 42, 0.5);
     --dark-70: rgba(37, 40, 42, 0.7);
-=======
     --button: #002677;
-    --button-hover: #f2f4f8;
+    --button-hover: #ffb81c;
     --grey-dim: rgba(37, 40, 42, 0.5);
->>>>>>> 8bb0409f84a83473ba4a20460ead6366ac570a78
 }

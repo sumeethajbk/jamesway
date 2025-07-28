@@ -312,8 +312,8 @@ body .frm_forms .frm_form_fields input.input-has-value, body .frm_forms .frm_for
 
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
-body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin: 0 !important;; vertical-align: middle!important; cursor: pointer!important; background-color: var(--navy) !important; position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center!important; color: var(--white)!important; font-family: "Neue Haas Unica Pro", sans-serif; text-decoration: none; display: inline-block; font-size:1rem!important; font-weight: bold!important; line-height: 100%!important; padding:16px!important; width: 100%!important; border-radius: 10px!important; border: 0 none !important;}
-body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--white)!important; background-color: var(--dark) !important;}
+body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin: 0 !important;; vertical-align: middle!important; cursor: pointer!important; background-color: var(--navy) !important; position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center!important; color: var(--white)!important; font-family: "Neue Haas Unica Pro", sans-serif; text-decoration: none; display: inline-block; font-size:1rem!important; font-weight: bold!important; line-height: 100%!important; padding:16px!important; width: 100%!important; border-radius: 10px!important; border: 0 none !important; min-width: inherit;}
+body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--navy)!important; background-color: var(--button-hover) !important;}
 
 
 .frm_forms .frm_filed_wrapper {gap: 16px; justify-content: space-between; }
