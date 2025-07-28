@@ -49,11 +49,12 @@
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-.location-wrap{padding: 26px 0;}
-.location-left{margin-bottom: 16px;}
-.location-left h2 {font-size: 3rem; margin-bottom: 16px;}
+.location-wrap{padding: 45px 0;}
+.location-left{margin-bottom: 26px;}
+.location-left h2 {font-size: 3rem; margin-bottom: 16px; letter-spacing: normal;}
 .location-rt{display: block;}
-.location-list{width: calc(100% - 58px);}
+.location-list{width: calc(100% - 58px); margin-bottom: 45px;}
+.location-list:last-child{margin-bottom: 0;}
 
 
 

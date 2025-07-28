@@ -1,21 +1,23 @@
 @import url("_contact-form.css");
 @import url("_location-section.css");
+@import url("_signup-module.css");
 
 .contact-region-section{padding: 80px 0; background-color: var(--light-blue);}
 .contact-region-wrap{gap: 52px;}
 .contact-region-lt{flex: 0 0 350px;}
 .contact-region-rt{flex: 1}
 ul.region-links{margin: 0;}
-ul.region-links li{font-size: 1rem; font-weight: 500;}
+ul.region-links li{font-size: 1rem; font-weight: 500; margin-bottom: 10px;}
 .contact-select-wrap{justify-content: space-between;}
 .contact-select-wrap .h3{font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 800; font-size: 1.5rem; margin-bottom: 0;}
-.contact-select-wrap .select-wrap{flex: 0  0 395px; background-color: var(--white); border-radius: 10px; color: var(--navy); font-size: 0.875rem; font-weight: 400; line-height: 18px;}
+.contact-select-wrap .select-wrap{flex: 0  0 395px; background-color: var(--white); border-radius: 10px; color: var(--navy); font-size: 0.875rem!important; font-weight: 400!important; line-height: 18px;}
 
 .contact-region-lt .h5{font-weight: 700;}
-
+.contact-region-block .h4{font-weight: 800;}
+.contact-region-block:last-child{margin-bottom: 0;}
 .contact-region-sales > .h6{color: var(--navy); font-weight: 700; text-transform: uppercase}
 .contact-region-block{margin-bottom: 20px;}
-.contact-region-block .h5{border-bottom: 1px solid rgba(0, 0, 0, 0.20); padding-bottom: 20px;}
+.contact-region-block .h5{border-bottom: 1px solid rgba(0, 0, 0, 0.20); padding-bottom: 20px; font-weight: 800;}
 .contact-region-sales-wrap{gap: 20px;}
 .contact-region-sales-list{background-color: var(--white); border-radius: 10px; padding: 24px;}
 .contact-region-sales-list .contact-sales-img{margin-bottom: 12px;}
@@ -24,7 +26,7 @@ ul.region-links li{font-size: 1rem; font-weight: 500;}
 .contact-region-sales-list span{display: block; font-size: 1rem; font-weight: 400; opacity: 0.5; margin-bottom: 12px;}
 .contact-region-sales-list .sales-link{font-size: 1rem; font-weight: 700;}
 
-
+.contact-select-wrap .selectBox-dropdown .selectBox-label{opacity: 1;}
 
 @media only screen and (max-width: 1199px) and (min-width:1024px) {
 .contact-region-lt { flex: 0 0 300px; }
@@ -36,8 +38,29 @@ ul.region-links li{font-size: 1rem; font-weight: 500;}
 }
 @media only screen and (max-width: 1023px) and (min-width:768px) {
 .contact-region-section{padding: 64px 0;}
+.contact-region-wrap {
+  gap: 40px;
+  flex-direction: column;}
 
 
 
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+.contact-region-section { padding: 45px 0;}
+.contact-region-wrap{display: block;}
+.contact-region-lt{margin-bottom: 55px;}
+.contact-region-lt h2{font-size: 3rem;}
+.contact-region-lt p{margin-bottom: 40px;}
+.contact-select-wrap {flex-direction: column-reverse; align-items: inherit; gap: 25px;}
+.contact-select-wrap .select-wrap { flex: inherit;}
+.contact-select-wrap .h3 {margin-bottom: 20px;}
+.contact-region-block .h5 {margin-bottom: 20px;}
+
+
+
+}
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+.contact-region-sales{flex: 1;}
 
 }
