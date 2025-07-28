@@ -124,9 +124,9 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
 @media only screen and (max-width:1023px) and (min-width:200px) {
 .notification-left p {font-size: 1rem; line-height: normal;}
     
-.main_header .header {max-height:56px; position:relative; justify-content:space-between; min-height: 56px; padding:16px 0 0 0;}
-.main_header .container {padding:0 20px;}
-.main_header .logo {width: 56px; height: 56px;}
+.main_header .header {position:relative; justify-content:space-between; min-height:76px; padding:21px 0 21px 0;}
+.main_header .container-lg {padding:0 23px;}
+.main_header .logo {width:162px; height:34px;}
 
 .toggle_button {position: absolute; flex-direction: column; width: 56px; right: -20px; height:56px; cursor: pointer; top: 0; bottom: 0; margin: auto; display: block!important; text-align: center; background: var(--brand-mint);}
 .toggle_button span {display: block; position: absolute; top: 50%; transform: translateY(-50%); transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; left: 0; right: 0; font-size: 1.25rem; color: var(--brand-green); line-height: 1;}

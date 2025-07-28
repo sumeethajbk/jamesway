@@ -69,6 +69,22 @@
   <!-- end of main header -->
   
   <main id="mainContent">
+    <section class="default-banner-section pos-relative">
+      <div class="banner-bg">
+        <picture class="object-fit">
+          <source srcset="images/default-banner@2x.jpg" media="(min-width:768px)">
+          <img src="images/default-banner-mobile@2x.jpg" alt="Default Banner" title="Default Banner"> </picture>
+      </div>
+      <div class="container">
+        <div class="default-banner-main flex">
+          <div class="default-banner-text"> 
+			<span class="optional-text">Optional Preheader</span>
+            <h1>General Default</h1>
+            <p>A short excerpt can optionally appear here to introduce the page euismod cras porttitor felis malesuada quam aliquet.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- end of default banner -->
     <section class="general-default-article-section">
       <div class="no-banner-bg pos-absolute">&nbsp;</div>
       <!-- end of no-banner-bg -->
@@ -359,8 +375,8 @@
         <!-- end of cta main --> 
       </div>
     </section>
-    <!-- end of cta module --> 
-      <section class="signup-module">      
+    <!-- end of cta module -->
+    <section class="signup-module">
       <div class="container">
         <div class="signup-wrap flex">
           <div class="signup-lt"> <span class="optional-text">Newsletter Signup</span>
@@ -385,10 +401,11 @@
                           <label for="field_29yf4d2" id="field_29yf4d2_label" class="frm_primary_label"> <span class="frm_required" aria-hidden="true">*</span> </label>
                           <input type="email" id="field_29yf4d2" name="item_meta[8]" value="" placeholder="Your email address" data-reqmsg="Please enter your Email address" aria-required="true" data-invmsg="Please enter a valid email address" aria-invalid="false">
                         </div>
-                          <div class="frm_submit-btn">
-                        <div class="frm_submit frm_flex">
-                          <button class="frm_button_submit frm_final_submit" type="submit" formnovalidate="formnovalidate">Submit</button>
-                        </div></div>
+                        <div class="frm_submit-btn">
+                          <div class="frm_submit frm_flex">
+                            <button class="frm_button_submit frm_final_submit" type="submit" formnovalidate="formnovalidate">Submit</button>
+                          </div>
+                        </div>
                         <input type="hidden" name="item_key" value="">
                         <input name="frm_state" type="hidden" value="i3l6EXhA5ovhm4lH/jrINvJ7qc7BJpIKcLPe+EcZTrI=">
                       </div>
@@ -403,7 +420,8 @@
         </div>
         <!-- end of signup wrap --> 
       </div>
-    </section><!-- end of signup -->
+    </section>
+    <!-- end of signup --> 
   </main>
   <!-- end of mainContent -->
   <footer id="main_footer">

@@ -20,6 +20,7 @@
 .mini-block a{font-size: 0.875rem; font-weight: 400; color: var(--dark); line-height: 22px; display: block; text-decoration: underline; }
  .frm_forms .frm_message { margin: -4px;}
  
+ .mini-block a:hover {color: var(--navy)}
 
 /*-- media css starts here --*/
 @media only screen and (min-width:1440px) {
@@ -40,7 +41,7 @@
 
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-    .contact-section {padding: 60px 0 7px;}
+    .contact-section {padding: 60px 0 70px;}
     .contact-main {gap:40px;}
     .contact-main h1 {font-size:4rem; letter-spacing: 1.12px;}
     .contact-main .contact-links {display: flex; flex-wrap: wrap; gap:30px;}  
@@ -54,9 +55,9 @@
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .contact-section {padding: 42px 0 7px;}
-    .contact-main {gap:16px;}
-    .contact-main h1 {font-size:3rem; letter-spacing: 0.96px; margin: 0 0 14px 0;}
+    .contact-section {padding: 55px 0 55px;}
+    .contact-main {gap:34px;}
+    .contact-main h1 {font-size:2.5rem; letter-spacing: 0.96px; margin: 0 0 14px 0;}
 
     .frm_forms .frm_message { padding: 20px 10px 5px 25px; }
     .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -9px; font-size: 9px!important;}
