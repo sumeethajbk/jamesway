@@ -17,14 +17,12 @@ Text Domain:Jamesway
 @import url("css/_footer.css");
 
 
-/*
 @font-face {
     font-family: 'Neue Haas Unica Pro';
     src: url('fonts/neuehaasunicapro-black-webfont.woff2') format('woff2'),
          url('fonts/neuehaasunicapro-black-webfont.woff') format('woff'),
          url('fonts/neuehaasunicapro-black-webfont.ttf') format('truetype');
     font-weight: 900; font-style: normal;}
-*/
 
 @font-face {
     font-family: 'Neue Haas Unica Pro';
@@ -61,6 +59,7 @@ Text Domain:Jamesway
          url('fonts/neuehaasunicapro-xblack-webfont.ttf') format('truetype');
     font-weight: 1000; font-style: normal;}
 
+/*
 @font-face {
     font-family: 'Neue Haas Unica Pro';
     src: url('fonts/neuehaasunica-black-webfont.woff2') format('woff2'),
@@ -69,6 +68,7 @@ Text Domain:Jamesway
     font-style: normal;
 
 }
+*/
 
 /*-- customized styles starts here --*/
 body {font-family: 'Neue Haas Unica Pro', sans-serif; color:var(--body-text); font-size:1.125rem; line-height:1.44; font-weight:400; font-style:normal; overflow-x:hidden; background:var(--white); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch; padding: 0;}
@@ -313,7 +313,7 @@ body .frm_forms .frm_form_fields input.input-has-value, body .frm_forms .frm_for
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
 body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin: 0 !important;; vertical-align: middle!important; cursor: pointer!important; background-color: var(--navy) !important; position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center!important; color: var(--white)!important; font-family: "Neue Haas Unica Pro", sans-serif; text-decoration: none; display: inline-block; font-size:1rem!important; font-weight: bold!important; line-height: 100%!important; padding:16px!important; width: 100%!important; border-radius: 10px!important; border: 0 none !important;}
-body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--white)!important; background-color: var(--dark) !important; transform: translate(4px, -4px); box-shadow: -4px 4px 0px 0px var(--brand-mint), -3px 3px 0px 0px var(--brand-mint), -2px 2px 0px 0px var(--brand-mint), -1px 1px 0px 0px var(--brand-mint);}
+body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--white)!important; background-color: var(--dark) !important;}
 
 
 .frm_forms .frm_filed_wrapper {gap: 16px; justify-content: space-between; }
@@ -396,56 +396,27 @@ body .cky-btn-revisit-wrapper {position: fixed;}
     .container, .container-lg {padding:0 30px; max-width:100%;}
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 200px) {
-    .cat-wrap ul li {font-size: 0.75rem;}  
-    .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {padding: 13px 16px 13px;}
-    .frm_forms .frm_filed_wrapper .frm_html_container {font-size:0.875rem; line-height: 1.4;}
 
-    body .selectBox-dropdown {font-size: 0.875rem;}
-    body .selectBox-dropdown .selectBox-arrow {font-size: 0.875rem;}
-    
-    
+@media only screen and (max-width: 1023px) and (min-width:200px) {
+    #mainContent {padding:76px 0 0 0;}
 }
-
-@media only screen and (max-width: 1023px) and (min-width: 810px) {
-      #mainContent {padding:101px 0 80px 0;}
-    
-}
-
-@media only screen and (max-width:809px) {
-    #mainContent {padding: 56px 0 64px 0;}
-    
-}
-
-
 
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
     .hide-in-tab, .hide-in-tablet {display:none;} 
     .btn-center {margin:35px 0 0 0;}
-    
-    h1, .h1, .h1b {font-size: 3rem; letter-spacing: 0.96px;}
-    
+        
     .heading {padding: 0 0 32px;}
     
     .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 16px;}
     .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -16px;}
     .frm_first {margin-right: 16px;}
     .frm_half {width: calc(50% - 8px);}
-
-      .sec-wrap {padding: 64px 0;}
-    
-        .single-cta {margin: 32px 0 0 0;}
-    .single-cta .h3 {font-size: 2rem; letter-spacing: 0.64px;}
     
 }
 
 
-@media only screen and (max-width:1023px) and (min-width:200px) {
-    body .mfp-iframe-holder .mfp-close {right: 0;}
-    .mfp-iframe-holder {padding: 40px;}
 
-}
 
 @media only screen and (max-width:767px) and (min-width:200px) {  
     body {font-size: 1rem; line-height: 1.5;}
@@ -464,15 +435,6 @@ body .cky-btn-revisit-wrapper {position: fixed;}
     
     
     .hide-in-mobile {display:none;}    
-     h1 {font-size: 2.5rem; letter-spacing: 0.8px;}
-     h2 {font-size: 2rem; letter-spacing: 0.64px; margin-bottom: 19px;}
-     h3{font-size: 1.5rem; letter-spacing: 0.48px;}
-     h4 {font-size: 1.25rem; line-height: 1; letter-spacing: 0.4px;}
-     h5 {font-size: 1.125rem; line-height: 1; letter-spacing: 0.36px;}
-     h6 {font-size: 1rem; line-height: 1; letter-spacing: 0.32px;}
-    .h1, .h1b {font-size: 2.5rem; letter-spacing: 0.8px;}
-
-    .h3{font-size: 1.5rem; letter-spacing: 0.48px;}
     
     .audio-player {padding: 4px 0 6px;}
     .video-thumbnail iframe{min-height: 197px!important;}    
@@ -491,11 +453,7 @@ body .cky-btn-revisit-wrapper {position: fixed;}
     .frm_forms .frm_filed_wrapper .frm_html_container {text-align: center;}
     .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -12px; line-height: 1!important;}
     
-    .bgform .field-wrap-three {gap: 0;}
-    .bgform .field-wrap-three .frm_half {flex: 100%;}
-    .bgform .optional-text {margin: 0 0 13px 0;}
-    .bgform .h3 {margin-bottom: 11px;}
-    .bgform .frm_forms .frm_submit {margin: 4px 0 0 0;}
+   
     
     .btn-center {margin: 24px 0 0 0;}
     
@@ -505,14 +463,6 @@ body .cky-btn-revisit-wrapper {position: fixed;}
     .breadcrumb ul li {font-size: 1rem;}
     .breadcrumb ul li::before {margin: -1px 11.5px 0 12.5px;}
     
-    .sec-wrap {padding:40px 0; gap: 20px;}
-    
-    .single-cta {margin: 20px 0 0 0; clip-path: var(--path-12);}
-    .single-cta .h3 {font-size:1.5rem; letter-spacing: 0.48px; padding: 0 0 12px 0;}
-    .single-cta .h3 a {padding: 16px 70px 16px 16px;}
-    .single-cta .h3 a::after {right: 28px;}
-    
-    .cat-wrapper .cat-lt .cat-wrap li a::before, .cat-wrapper .cat-lt .cat-wrap li a::after {bottom: 2px; height: 1px;}
     
     .fluid-width-wrapper {padding: 0; margin: 0 20px;}
     .fluid-width {margin-bottom: 20px;}
