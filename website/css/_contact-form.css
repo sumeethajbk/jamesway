@@ -20,6 +20,7 @@
 .mini-block a{font-size: 0.875rem; font-weight: 400; color: var(--dark); line-height: 22px; display: block; text-decoration: underline; }
  .frm_forms .frm_message { margin: -4px;}
  
+ .mini-block a:hover {color: var(--navy)}
 
 /*-- media css starts here --*/
 @media only screen and (min-width:1440px) {
@@ -40,7 +41,7 @@
 
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-    .contact-section {padding: 60px 0 7px;}
+    .contact-section {padding: 60px 0 70px;}
     .contact-main {gap:40px;}
     .contact-main h1 {font-size:4rem; letter-spacing: 1.12px;}
     .contact-main .contact-links {display: flex; flex-wrap: wrap; gap:30px;}  

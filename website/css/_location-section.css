@@ -11,10 +11,51 @@
 .location-right{flex: 0 0 calc(100% - 430px);}
 .location-rt{gap:60px  40px}
 .location-list{flex: 0 0 calc(33.33% - 27px)}
-.location-list span.dark-wt{font-size: 1.125rem; display: block; font-family: "Neue Haas Unica Pro", sans-serif; margin-bottom: 16px;}
+.location-list span.dark-wt{font-size: 1.125rem; display: block; font-family: "Neue Haas Unica Pro", sans-serif; margin-bottom: 16px; font-weight: 700;}
 .location-list p{font-size: 1rem; margin-bottom: 16px;}
 .location-img{width: 56px; height: 56px; margin-bottom: 16px;}
 .location-links{margin: 0;}
 .location-links > li{margin-bottom: 0;}
 .location-links > li a{font-size: 16px; font-weight: 700; font-family: "Neue Haas Unica Pro", sans-serif;}
 .location-links > li a span{color: var(--dark);  }
+
+
+
+
+@media only screen and (max-width:1150px) and (min-width:1024px) {
+.location-main { gap: 64px; }
+.location-left { flex: 0 0 300px; }
+.location-right{flex: 0 0 calc(100% - 380px);}
+.location-rt { gap: 40px 40px; }
+.location-list { flex: 0 0 calc(50% - 20px); }
+
+}
+@media only screen and (max-width:1023px) and (min-width:200px) {
+.location-main{display: block;}
+
+
+
+
+}
+@media only screen and (max-width:1023px) and (min-width:768px) {
+.location-wrap{padding: 64px 0;}
+.location-left{margin-bottom: 40px;}
+.location-left p{margin-bottom: 20px;}
+.response-team{width: fit-content;}
+.location-list { flex: 0 0 calc(50% - 27px); }
+
+
+
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+.location-wrap{padding: 26px 0;}
+.location-left{margin-bottom: 16px;}
+.location-left h2 {font-size: 3rem; margin-bottom: 16px;}
+.location-rt{display: block;}
+.location-list{width: calc(100% - 58px);}
+
+
+
+
+}
