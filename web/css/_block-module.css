@@ -1,0 +1,14 @@
+.block-module {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; margin:24px 0; background: var(--grey);}
+.block-inner {width: 100%;}
+.block-inner .block-lt {width: 122px;}
+.block-inner .block-rt  {padding: 32px; width: calc(100% - 122px);}
+.block-inner .block-rt h5 {margin-bottom:0; max-width: 500px;}
+.block-inner .block-rt .brand-mike {right: 0; top: 0;}
+
+/*-- media starts here --*/
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .block-module {margin: 8px 0;}
+    .block-inner .block-lt {width: 100%; height: 32vw;}
+    .block-inner .block-lt img {object-position: 0 0; -o-object-position: 0 0;}
+    .block-inner .block-rt {padding:24px; width: 100%;}
+}
