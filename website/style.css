@@ -17,12 +17,14 @@ Text Domain:Jamesway
 @import url("css/_footer.css");
 
 
+/*
 @font-face {
     font-family: 'Neue Haas Unica Pro';
     src: url('fonts/neuehaasunicapro-black-webfont.woff2') format('woff2'),
          url('fonts/neuehaasunicapro-black-webfont.woff') format('woff'),
          url('fonts/neuehaasunicapro-black-webfont.ttf') format('truetype');
     font-weight: 900; font-style: normal;}
+*/
 
 @font-face {
     font-family: 'Neue Haas Unica Pro';
@@ -58,6 +60,15 @@ Text Domain:Jamesway
          url('fonts/neuehaasunicapro-xblack-webfont.woff') format('woff'),
          url('fonts/neuehaasunicapro-xblack-webfont.ttf') format('truetype');
     font-weight: 1000; font-style: normal;}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('fonts/neuehaasunica-black-webfont.woff2') format('woff2'),
+         url('fonts/neuehaasunica-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
 
 /*-- customized styles starts here --*/
 body {font-family: 'Neue Haas Unica Pro', sans-serif; color:var(--body-text); font-size:1.125rem; line-height:1.44; font-weight:400; font-style:normal; overflow-x:hidden; background:var(--white); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch; padding: 0;}
