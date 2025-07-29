@@ -2,5 +2,6 @@
 @import url("_intro-module.css");
 @import url("_intro-block-section.css");
 @import url("_request-section.css");
+@import url("_signup-module.css");
 
 .banner-bg:after{left: 0; top: 0; width: 100%; position: absolute; background-color: var(--dark); opacity: 0.6; z-index: 1; height: 100%; display: block; content: ""; }

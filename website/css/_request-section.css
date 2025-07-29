@@ -1,7 +1,7 @@
 .request-section{padding-bottom: 80px;}
 .request-blck{padding: 33px 32px 33px; border-radius: 20px; background-color: var(--navy); justify-content: space-between;} 
 .request-lt h4{font-size: 2rem; color: var(--yellow); margin-bottom: 0; font-weight: 800; line-height: 1.25;}
-.request-rt a{padding: 15px 39px;}
+.request-rt a{width: 300px;}
 .request-lt{flex: 1; margin-right: 20px;}
 
 
@@ -11,7 +11,9 @@
 @media only screen and (max-width: 767px) and (min-width: 200px) {
     .request-section{padding: 30px 0;}
     .request-blck{display: block;}
-    .request-lt{}
+    .request-lt{margin-bottom: 30px;}
+    .request-rt{width: 100%;}
+    .request-rt a{width: inherit;}
 
 
 }
