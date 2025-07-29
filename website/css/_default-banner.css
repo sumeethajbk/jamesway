@@ -1,5 +1,5 @@
 .default-banner-section {float: left; width: 100%; position: relative; z-index: 1;}
-.default-banner-main {width: 100%; min-height:480px; position: relative; align-items:flex-start; padding: 72px 0;}
+.default-banner-main {width: 100%; min-height:33.334vw; position: relative; align-items:flex-start; padding: 72px 0;}
 .default-banner-main .default-banner-text {clear: both; max-width: 395px; width: 100%;}
 .default-banner-main .default-banner-text .optional-text {font-size: 1rem; line-height: 1.5; color: var(--white-50); font-weight:400; letter-spacing: normal; margin: 0 0 22px 0;}
 .default-banner-main .default-banner-text h1 {color: var(--yellow); margin-bottom: 25px;}

@@ -1,4 +1,4 @@
-.intro-module {clear: both; width: 100%; padding: 80px 0 72px;}
+.intro-module {clear: both; width: 100%; padding: 80px 0 80px; background: var(--white);}
 .intro-main {clear: both; width: 100%; gap:4.6875%; justify-content: space-between;}
 .intro-lt {max-width:394px; width: 100%;}
 .intro-lt:only-child {max-width: 100%; flex-grow: 1;}
