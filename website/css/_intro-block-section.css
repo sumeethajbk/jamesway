@@ -1,7 +1,30 @@
 .intro-block-section{padding: 0 0 72px;}
 .intro-block-main{gap: 72px 30px;}
 .intro-list{flex: 0 0 calc(25% - 24px); }
-.intro-img{margin-bottom: 27px;}
+.intro-img{margin-bottom: 28px;}
 .intro-img img{border-radius: 20px;}
 .intro-text-blc h3{font-family: 'Neue Haas Unica Pro', sans-serif; font-size: 1.5rem; font-weight: 800; line-height: 28px; margin-bottom: 10px; }
 .intro-text-blc p{font-size: 1rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+	
+    .intro-block-main .slick-track{display: flex; gap: 30px}
+    .intro-block-main .slick-list{overflow: inherit;}
+    .intro-list.slick-slide{ flex: 0 0 296px; }
+
+
+}
