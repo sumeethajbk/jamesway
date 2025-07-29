@@ -3,29 +3,29 @@ jQuery(document).ready(function () {
     /* Logo Slider */
   var windowWidth = jQuery(window).width();
   function introSlider() {
-    var $tvslider = jQuery('.logo-slider-row');
-    var tvslideCount = $tvslider.children().length;
-    if (windowWidth >= 1024) {
-      if (tvslideCount > 3) {
-        $tvslider.slick({
-          slidesToShow: 3,
+    var $introslide = jQuery('.intro-block-main');
+    var introlist = $introslide.children().length;
+    if (windowWidth < 1024) {
+      if (introlist > 2) {
+        $introslide.slick({
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           speed: 5000,
-          dots: false,
+          dots: true,
           arrows: false,
           variableWidth: true,
           draggable: true,
           swipeToSlide: true,
           touchThreshold: 100,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 0,
           centerMode: true,
           cssEase: 'linear',
         });
       }
     } else {
-      $tvslider.slick({
+      $introslide.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
