@@ -14,7 +14,7 @@
 .model-overlay-hide {overflow:hidden;}
 
 
-.trans-header {background: transparent;}
+.trans-header .main_header {background: transparent;}
 .trans-header .main_header.fixed-header .normal-logo {visibility:hidden; opacity:0;}
 .trans-header .main_header.fixed-header .fixed-logo {visibility:visible; opacity:1;}
 
