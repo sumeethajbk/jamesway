@@ -10,7 +10,7 @@
 .repeater-text ul > li:before {width:4px; height:4px; top: 11px; left: -14px; background:var(--dark);}
 .repeater-text .btn {padding:20px 0 0 0;}
 
-.repeater-img{width: 46.875%; flex-grow: 1; min-height: 400px;}
+.repeater-img{width: 46.875%; flex-grow: 1; max-height: 400px; height: 100%;}
 .repeater-img figure img {border-radius: 40px;}
 
 

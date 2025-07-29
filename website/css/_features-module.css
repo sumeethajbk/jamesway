@@ -9,8 +9,9 @@
 
 
 @media only screen and (max-width:1023px) and (min-width: 768px) {
-    .features-grid { flex: 0 0 calc(50% - 16px); }
-    .features-inner{padding: 64px 0;}
+    .features-module {padding: 64px 0;}
+	.features-inner {gap: 45px 32px;}
+	.features-grid {flex: 0 0 calc(50% - 16px);}
 }
 
 @media only screen and (max-width:767px) and (min-width: 200px) {
