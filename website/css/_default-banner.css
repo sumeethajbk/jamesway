@@ -3,7 +3,7 @@
 .default-banner-main .default-banner-text {clear: both; max-width: 395px; width: 100%;}
 .default-banner-main .default-banner-text .optional-text {font-size: 1rem; line-height: 1.5; color: var(--white-50); font-weight:400; letter-spacing: normal; margin: 0 0 22px 0;}
 .default-banner-main .default-banner-text h1 {color: var(--yellow); margin-bottom: 25px;}
-.default-banner-main .default-banner-text p {color: var(--white); font-size: 1.125rem; font-weight:800; line-height: 1.56;}
+.default-banner-main .default-banner-text p {color: var(--white); font-size: 1.125rem; font-weight:500; line-height: 1.56;}
 
 
 
