@@ -70,8 +70,8 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
 .trans-header ul.main_menu > li > a {color: var(--white);}
 .trans-header .main_header .lang-nav ul::before {background: var(--white);}
 	
-	
-
+/* Fixed Header */	
+.trans-header .main_header.fixed-header ul.main_menu > li > a {color: var(--dark);}
 
 }
 
