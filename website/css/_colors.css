@@ -26,4 +26,7 @@
     --button: #002677;
     --button-hover: #ffb81c;
     --grey-dim: rgba(37, 40, 42, 0.5);
+	--yellow-gbtn:linear-gradient(90deg, #FFB400 0%, #FF9000 100%));
+	--yellow-btn:#ffb81c;
+	--yellow-btn-hover:#002677;
 }
