@@ -34,12 +34,12 @@ sup {bottom: 8px; font-size: 0.765rem; left: -5px;}
 sub {top: 0;}
 dl {margin-bottom: 24px;}
 dd {margin-bottom: 24px;}
-ul {list-style: none; margin:0 0 28px 28px;}
-ul > li {counter-increment: li; position: relative; margin-bottom: 8px;}
+ul {list-style: none; margin:0 0 28px 24px;}
+ul > li {counter-increment: li; position: relative; margin-bottom: 9px;}
 ul > li:before {content: ""; width: 11px; height: 11px; display: block; position: absolute; top:8px; left: -20px; background-color: var(--base-foreground); border-radius: 50%;}
 li > ul {margin: 25px 0 26px 40px;}
-ol {counter-reset: section; list-style: none; margin:0 0 28px 27px;}
-ol > li {counter-increment: li; position: relative; margin-bottom:8px;}
+ol {counter-reset: section; list-style: none; margin:0 0 28px 24px;}
+ol > li {counter-increment: li; position: relative; margin-bottom:9px;}
 ol > li:before {counter-increment: section; content: counter(section, decimal) "."; left: -21px; position: absolute;}
 li > ol {margin: 25px 0 26px 40px;}
 img {-ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; max-width: 100%; height: auto;}

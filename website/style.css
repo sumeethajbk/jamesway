@@ -82,7 +82,7 @@ body {font-family: 'Neue Haas Unica Pro', sans-serif; color:var(--body-text); fo
 .container-sm {max-width: 900px; margin: 0 auto; width: 100%;}
 .btn {display:block;}
 .btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:16px;}
-.optional-text {font-size:1rem; color:var(--navy); font-weight: bold; margin:0 0 24px 0; display:block; line-height: 1.25; width: 100%;  letter-spacing: 1.28px;}
+.optional-text {font-size:1rem; color:var(--navy); font-weight: bold; margin:0 0 18px 0; display:block; line-height: 1.25; width: 100%;  letter-spacing: 1.28px;}
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--anchor); text-decoration: none;}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--heading);}

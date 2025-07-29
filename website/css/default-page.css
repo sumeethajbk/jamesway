@@ -1,11 +1,13 @@
 @import url("_default-banner.css");
 @import url("_intro-module.css");
+@import url("_features-module.css");
 @import url("_repeater-section.css");
 @import url("_cta-module.css");
 @import url("_accordion.css");
 @import url("_signup-module.css");
 
 .default-banner-main .default-banner-text p {font-weight: 800;}
+.intro-module ~ .features-module {padding: 0; margin-bottom:7px;}
 
 .general-default-article-section {float: left; width: 100%; padding:76px 0 42px 0; position: relative; z-index: 1;}
 .general-default-article-section .default-inner {position: relative; background: var(--white); padding:76px 80px 79px 80px; flex: 1; width: 100%;}
