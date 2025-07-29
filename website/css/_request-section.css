@@ -1,3 +1,4 @@
 .request-section{margin-bottom: 80px;}
 .request-blck{padding: 33px 32px 33px; border-radius: 20px; background-color: var(--navy); justify-content: space-between;} 
 .request-lt h4{font-size: 2rem; color: var(--yellow); margin-bottom: 0; font-weight: 800; line-height: 1.25;}
+.request-rt a{padding: 15px 39px;}
