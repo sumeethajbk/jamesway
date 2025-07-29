@@ -25,6 +25,7 @@
     .intro-block-main .slick-track{display: flex; gap: 30px}
     .intro-block-main .slick-list{overflow: inherit;}
     .intro-list.slick-slide{ flex: 0 0 296px; }
-
+    .intro-text-blc p { font-size: 1.125rem; }
+    .intro-block-section { padding: 0px 0 30px; }
 
 }

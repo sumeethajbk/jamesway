@@ -5,8 +5,8 @@ jQuery(document).ready(function () {
   function introSlider() {
     var $introslide = jQuery('.intro-block-main');
     var introlist = $introslide.children().length;
-    if (windowWidth < 1024) {
-      if (introlist > 2) {
+    if (windowWidth <= 1023) {
+     
         $introslide.slick({
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -23,24 +23,9 @@ jQuery(document).ready(function () {
        
           cssEase: 'linear',
         });
-      }
+      
     } else {
-      $introslide.slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-          speed: 2000,
-          dots: false,
-          arrows: false,
-          variableWidth: true,
-          draggable: true,
-          swipeToSlide: true,
-          touchThreshold: 100,
-          autoplay: false,
-          autoplaySpeed: 0,
-          centerMode: true,
-          cssEase: 'linear',
-      });
+      
     }
   }
   introSlider();
@@ -50,7 +35,6 @@ jQuery(document).ready(function () {
     if (newScreenWidth !== windowWidth) {
       windowWidth = newScreenWidth;
       introSlider();
-
     }
   });
 /* End of logo slider */
