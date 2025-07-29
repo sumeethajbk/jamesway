@@ -100,7 +100,13 @@ button, .button  {display: inline-block; font-size:1.125rem; font-weight: 700; l
 button:hover, .button:hover {color: var(--navy); background-color: var(--button-hover);}
 button:focus, .button:focus, button:active, .button:active {background-color: var(--button); color: var(--navy);}
 
+.yellow-btn {background: var(--yellow-btn); color: var(--yellow-btn-hover);}
+.yellow-btn:hover {background: var(--white); color: var(--yellow-btn-hover);}
+.yellow-btn:active {background: var(--yellow-btn); color: var(--yellow-btn-hover);}
 
+.yellow-gbtn {background: var(--yellow-gbtn); color: var(--yellow-btn-hover);}
+.yellow-gbtn:hover {background: var(--white); color: var(--yellow-btn-hover);}
+.yellow-gbtn:active {background: var(--yellow-gbtn); color: var(--yellow-btn-hover);}
 
 input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:15px; top:0; bottom: 0; padding: 0 !important; width: 18px; height: 17px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1; box-shadow: none !important; transform: none !important;}
 input[type="submit"]:hover {box-shadow: none; transform: none;}
