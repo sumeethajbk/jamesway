@@ -1,21 +1,22 @@
 .signup-module {clear: both; width: 100%; background: var(--brandbook-gray-light); position: relative; z-index: 1; overflow:hidden;}
-.signup-module .signup-wrap {justify-content: space-between; align-items: center; padding:64px 0 63px; position: relative; gap:5%; z-index: 1;}
+.signup-module .signup-wrap {justify-content: space-between; align-items: center; padding:64px 0 64px; position: relative; gap:5%; z-index: 1;}
 
-.signup-module .signup-lt {width: calc(100% - 52.5%); flex-grow: 1;}
-.signup-module .signup-lt .optional-text {text-transform: none; font-weight: 500; letter-spacing: normal; color: var(--dark); font-size: 1.125rem;}
-.signup-module .signup-lt .h4 {margin-bottom: 0;}
+.signup-module .signup-lt {width: calc(100% - 52.5%); flex-grow: 1; padding: 3px 0 0 0;}
+.signup-module .signup-lt .optional-text {text-transform: none; font-weight: 500; letter-spacing: normal; color: var(--dark); font-size: 1.125rem; margin: 0 0 8px 0;}
+.signup-module .signup-lt .h4 {margin-bottom: 0; font-weight: 800;}
 
-.signup-module .signup-rt {width: 47.5%; text-align: center;}
+.signup-module .signup-rt {width: 47.5%; text-align: center; flex-grow: 1;}
 .signup-module .signup-form {position: relative}
-.signup-module .signup-form .disclaimer {font-size:0.875rem; line-height:1.57; font-weight: 500;}
+.signup-module .signup-form .disclaimer {font-size:0.875rem; line-height:normal; font-weight: 500;}
 
-.signup-module .signup-form input {font-size:0.875rem; font-weight: normal; line-height: 1.29; padding: 15px 160px 14px 16px; border-radius: 10px; background: var(--white)!important; font-family:"Neue Haas Unica Pro", sans-serif;}
+.signup-module .signup-form input {font-size:0.875rem; font-weight: normal; line-height: 1.29; padding:16px 120px 16px 16px; border-radius: 10px; background: var(--white)!important; font-family:"Neue Haas Unica Pro", sans-serif;}
 
-.signup-module .signup-form .frm_forms .form-field {margin-bottom:16px;}
+.signup-module .signup-form .frm_forms .form-field {margin-bottom:24px;}
 .signup-module .signup-form .frm_forms .form-field label {display: none}
 .signup-module .signup-form .frm_forms .frm_submit-btn {position: absolute; right: 0; top: 0; margin: 0; width: auto;}
+.signup-module .signup-form .frm_forms .frm_submit-btn button {border-radius: 0 10px 10px 0!important; padding: 16px 20px 16px 21px !important;}
 .signup-module .signup-form .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {top: 70px;}
-.signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--white);}
+.signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--dark);}
 
 .signup-module ::-webkit-input-placeholder {font-size: 0.875rem!important; font-weight: normal; font-family:"Neue Haas Unica Pro", sans-serif;}
 .signup-module:-moz-placeholder {font-size: 0.875rem!important; font-weight: normal;font-family:"Neue Haas Unica Pro", sans-serif;}
@@ -24,16 +25,17 @@
 
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
-.signup-module .signup-lt h4 {font-size: 1.625rem;}
+	.signup-module .signup-lt {width: calc(100% - 60%);}
+	.signup-module .signup-rt {width: 52.5%;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-    .signup-module .signup-wrap {padding: 64px 0 24px;}
+    .signup-module .signup-wrap {padding:38px 0 62px;}
     .signup-module .signup-lt {width: 100%;}
-    .signup-module .signup-rt {width: 100%; margin: 32px 0 0 0;}
-    .signup-module .signup-form input {padding: 16px 130px 16px 32px;}
-    .signup-module .signup-form .frm_forms .frm_submit button {min-width: 120px;}
-    .signup-module .brand_asset {right: -12px; top:-34.334px; left: auto;}
-    .signup-module .brand_asset.reverse {display: none;}
+	.signup-module .signup-lt .optional-text {margin: 0 0 5px 0;}
+	.signup-module .signup-lt .h4 {font-family: 'eb-garamond', sans-serif; font-size: 2rem; line-height: 0.94;}
+    .signup-module .signup-rt {width: 100%; margin:63px 0 0 0;}
+	.signup-module .signup-form .frm_forms .form-field {margin-bottom:22px;}
+	.signup-module .signup-form .disclaimer {line-height: 1.5;}
     
 }
