@@ -30,7 +30,7 @@ footer#main_footer .footer_top .footer_rt .ftr-sm ul li a span {font-size: 0; di
 
 
 /* Footer Middle */
-footer#main_footer .footer_middle {margin:0 0 31px 0; clear: both; width: 100%;}
+footer#main_footer .footer_middle {margin:0 0 30px 0; clear: both; width: 100%;}
 footer#main_footer .footer_middle .ftr-menu-wrap {gap:6%; justify-content: space-between;}
 footer#main_footer .footer_middle .footer-menu {width:18.359375%; max-width: 235px; min-width: 99px; display: inline-block;}
 footer#main_footer .footer_middle .footer-menu:nth-child(1) {width: 16.171875%;}
@@ -71,7 +71,7 @@ footer#main_footer .footer_btm .ftr-btm-rt .ftr-btm-links ul li {margin: 0;}
 
 @media only screen and (max-width:767px) and (min-width:200px) {  
     footer#main_footer {padding:41px 0 34px; background: radial-gradient(85.02% 85.02% at 50% 14.98%, var(--navy-light) 40%, var(--navy-dark) 100%);}
-	footer#main_footer .footer_top {gap: 32px; margin: 0 0 43px 0;}
+	footer#main_footer .footer_top {gap: 33px; margin: 0 0 43px 0;}
 	footer#main_footer .footer_top .footer_lt {flex:100%;}
 	footer#main_footer .footer_top .footer_rt {width: 100%;}
 	footer#main_footer .footer_top .footer_rt .ftr-sm ul {justify-content: flex-start;}

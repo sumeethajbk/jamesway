@@ -295,7 +295,7 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 
 /* Input */
 .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: bold; display: block; font-size: 0.875rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--white) !important; color: var(--dark); padding: 16px 16px 16px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 10px;}
-body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--brand-blue)!important; border-color: var(--brand-mint)!important;}
+body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--dark)!important; border-color: var(--white)!important;}
 .frm_forms .frm_form_fields select {color: var(--brand-green)!important;}
 
 .frm_forms .frm_form_fields textarea {min-height:160px; padding: 16px;}
@@ -303,7 +303,6 @@ body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields t
 .frm_forms .frm_form_fields .selectBox-dropdown{background-color: var(--white); color: var(--dark);  padding:14px 46px 14px 16px; font-family: "Neue Haas Unica Pro", sans-serif; font-weight: 700; text-transform: none; border-radius: 10px;}
 .frm_forms .frm_form_fields .selectBox-dropdown:focus, .frm_forms .frm_form_fields .selectBox-dropdown:hover {border-color: var(--brand-mint);}
 
-body .frm_forms .frm_form_fields input.input-has-value, body .frm_forms .frm_form_fields textarea.input-has-value {border:1px solid transparent!important; box-shadow: 6px 6px 0px 0px #3364FA, 5px 5px 0px 0px var(--brand-blue), 4px 4px 0px 0px var(--brand-blue), 3px 3px 0px 0px var(--brand-blue), 2px 2px 0px 0px var(--brand-blue), 1px 1px 0px 0px var(--brand-blue)!important;}
 
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
