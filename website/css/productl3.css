@@ -4,5 +4,18 @@
 @import url("_request-section.css");
 @import url("_signup-module.css");
 
-.default-banner-main {align-items: center; min-height: 41.7vw;}
+.default-banner-main {align-items: center; min-height: 600px}
+.default-banner-main .default-banner-text {max-width: 538px;}
+.default-banner-main .default-banner-text p {font-size: 1.25rem;}
 .banner-bg:after{left: 0; top: 0; width: 100%; position: absolute; background-color: var(--dark); opacity: 0.6; z-index: 1; height: 100%; display: block; content: ""; }
+
+
+
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+  .default-banner-main { min-height: 655px; align-items: flex-end;}
+
+
+  }

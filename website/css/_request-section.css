@@ -5,8 +5,10 @@
 .request-lt{flex: 1; margin-right: 20px;}
 
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+.request-section { padding: 30px 0 64px; }
 
-
+}
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
     .request-section{padding: 30px 0;}
