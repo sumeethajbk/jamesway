@@ -1,0 +1,12 @@
+@import url("_split-banner-section.css");
+@import url("_intro-module.css");
+@import url("_intro-block-section.css");
+@import url("_repeater-section.css");
+@import url("_signup-module.css");
+
+
+.main_header{background-color: var(--pinkish);}
+.intro-module{background-color: var(--brandbook-gray-light);}
+.intro-block-section{background-color: var(--brandbook-gray-light);}
+
+.repeater-section.row-reverse .repeater-list{flex-direction: row-reverse;}

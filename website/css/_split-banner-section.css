@@ -1,0 +1,37 @@
+.split-banner-section { clear: both; width: 100%; position: relative; overflow: hidden; background-color: var(--pinkish); z-index: 1; min-height: 402px; }
+
+
+.split-banner-main{flex-wrap: nowrap; padding: 25px 0 0;}
+.split-banner-main .split-banner-text { clear: both; color: var(--dark); position: relative; flex: 0 0 577px; flex-grow: 0; display: flex; flex-wrap: wrap; align-items: center; z-index: 1; flex-grow: 1; padding-bottom: 117px; }
+.split-banner-main .split-banner-text .split-txt-inner { max-width: 577px; width: 100%; padding: 20px 0; }
+.split-banner-bg { position: absolute; bottom: 0; left: 0; height: 47px; background: var(--brandbook-gray-light); width: 100%; z-index: -1; }
+
+.split-banner-main .split-banner-text h1 { font-size: 3.75rem; font-weight: 600px; }
+.split-banner-main .split-banner-text p { font-size: 1.25rem; margin-bottom: 24px; line-height: 1.4; font-weight: 400; }
+
+
+@media only screen and (min-width:1440px) {
+.split-banner-thumb{flex: 1;}
+.split-banner-thumb img{min-width: 762px; position: relative; right: 58px}
+}
+
+@media only screen and (max-width:1279px) and (min-width:768px) {
+    .split-banner-main .split-banner-text { flex: 0 0 400px;}
+}
+
+
+
+
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+     .split-banner-main{display: block;}
+
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    
+   .split-banner-main .split-banner-text h1 { font-size: 3rem; }
+   .split-banner-main .split-banner-text {padding-bottom: inherit; text-align: center;}
+   .split-txt-inner .banner-btn{justify-content: center;}
+    
+}

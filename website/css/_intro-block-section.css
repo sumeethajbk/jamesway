@@ -5,15 +5,8 @@
 .intro-img img{border-radius: 20px;}
 .intro-text-blc h3{font-family: 'Neue Haas Unica Pro', sans-serif; font-size: 1.5rem; font-weight: 800; line-height: 28px; margin-bottom: 10px; }
 .intro-text-blc p{font-size: 1rem;}
-
-
-
-
-
-
-
-
-
+.intro-text-blc h3 a{color: var(--dark)}
+.intro-text-blc h3 a:hover{color: var(--navy)}
 
 
 
