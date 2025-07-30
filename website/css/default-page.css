@@ -147,9 +147,7 @@
     .note {clip-path: polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px)); padding:24px 36px 36px 20px; margin: 20px 0 7px;}
     .note::before {margin: 0 0 16px 0;}
     .note p {margin-bottom: 12px;}
-    
-    .cta-module {padding: 48px 0 24px 0;}
-    
+        
     .sidebar .side-bucket {margin: 0 0 19px 0;}
     .sidebar .support {padding:34px 48px 44px 32px; clip-path: var(--path-12);}
     .sidebar .search-bucket-form .h5, .sidebar .category-bucket .h5, .sidebar .support .h5 {font-size: 1.125rem; line-height: 1; letter-spacing: 0.36px;}
