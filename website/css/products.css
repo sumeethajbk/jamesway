@@ -10,3 +10,14 @@
 .intro-block-section{background-color: var(--brandbook-gray-light);}
 
 .repeater-section.row-reverse .repeater-list{flex-direction: row-reverse;}
+ul.slick-dots{display: none!important;}
+
+
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+  .intro-block-section {
+    padding: 0px 0 40px;
+  }
+}
