@@ -33,5 +33,6 @@
    .split-banner-main .split-banner-text h1 { font-size: 3rem; }
    .split-banner-main .split-banner-text {padding-bottom: inherit; text-align: center;}
    .split-txt-inner .banner-btn{justify-content: center;}
+   .split-banner-main .split-banner-text p { margin-bottom: 16px;}
     
 }
