@@ -59,6 +59,15 @@ Text Domain:Jamesway
          url('fonts/neuehaasunicapro-xblack-webfont.ttf') format('truetype');
     font-weight: 1000; font-style: normal;}
 
+@font-face {
+    font-family: 'neue_haas_unica_proMdIt';
+    src: url('fonts/neuehaasunicapro-mediumit-webfont.woff2') format('woff2'),
+         url('fonts/neuehaasunicapro-mediumit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /*-- customized styles starts here --*/
 
