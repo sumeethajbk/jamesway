@@ -108,6 +108,10 @@ button:focus, .button:focus, button:active, .button:active {background-color: va
 .yellow-gbtn:hover {background: var(--white); color: var(--yellow-btn-hover);}
 .yellow-gbtn:active {background: var(--yellow-gbtn); color: var(--yellow-btn-hover);}
 
+.arrow-btn {position: relative; display: flex; flex-wrap: wrap; gap:9px; min-width: inherit; font-size: 1rem; align-items: center; font-weight: 700; padding: 9px 20px 10px; justify-content: center;}
+.arrow-btn:after {content: "\f061"; position: relative; display: inline-block; font-family: "Font Awesome 6 Sharp";}
+.arrow-btn:hover:after {animation: bounceAlpha 1.4s ease-in-out infinite;}
+
 input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:15px; top:0; bottom: 0; padding: 0 !important; width: 18px; height: 17px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1; box-shadow: none !important; transform: none !important;}
 input[type="submit"]:hover {box-shadow: none; transform: none;}
 
