@@ -18,6 +18,7 @@
     --light-blue:#f2f4f8;
     --brandbook-gray: #b2b4b2;
     --brandbook-gray-light: #d2d2d2;
+    --tiny-gray: #e1e1e1;
     --navy: #002677;
     --navy-light:#00277c; 
     --navy-dark:#00164d;
@@ -31,5 +32,6 @@
 	--yellow-btn:#ffb81c;
 	--yellow-btn-hover:#002677;
     --pinkish: #f9f3ef;
+    
 	
 }
