@@ -1,4 +1,5 @@
 :root {
+	--black:#000000;
     --white: #ffffff;
     --white-15: rgb(255 255 255 / 15%);
     --white-25: rgb(255 255 255 / 25%);
@@ -30,4 +31,5 @@
 	--yellow-btn:#ffb81c;
 	--yellow-btn-hover:#002677;
     --pinkish: #f9f3ef;
+	
 }
