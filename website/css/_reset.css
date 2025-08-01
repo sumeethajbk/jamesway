@@ -98,7 +98,7 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 /* Default */
 button, .button  {display: inline-block; font-size:1.125rem; font-weight: 700; line-height:1.33; padding:15px 12px; vertical-align: middle; cursor: pointer; border:0 none; background-color: var(--button); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--white); font-family:"Neue Haas Unica Pro", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius:10px; outline: 0; box-sizing: border-box; text-transform:none; min-width: 226px;}
 button:hover, .button:hover {color: var(--navy); background-color: var(--button-hover);}
-button:focus, .button:focus, button:active, .button:active {background-color: var(--button); color: var(--navy);}
+button:focus, .button:focus, button:active, .button:active {background-color: var(--button); color: var(--white);}
 
 .yellow-btn {background: var(--yellow-btn); color: var(--yellow-btn-hover);}
 .yellow-btn:hover {background: var(--white); color: var(--yellow-btn-hover);}
