@@ -11,7 +11,7 @@
 .default-banner-main .default-banner-text p {font-weight: 800;}
 .intro-module ~ .features-module {padding: 0; margin-bottom:7px;}
 
-.general-default-container {float: left; width: 100%; padding:64px 0 80px 0; position: relative; z-index: 1;}
+.general-default-container {float: left; width: 100%; padding:80px 0 80px 0; position: relative; z-index: 1;}
 .general-default-container .container .container {padding: 0;}
 .general-default-container .micro-cta-module {margin: 40px 0 63px 0;}
 .general-default-container .general-default-inner  h3 {padding: 40px 0 0 0;}
@@ -22,7 +22,7 @@
 .default-inner {position: relative;}
 
 /* Default Thumb */
-.default-thumb {margin-top:64px; margin-bottom: 64px; position: relative; clear: both; width: 100%;}
+.default-thumb {margin-top:62px; margin-bottom: 62px; position: relative; clear: both; width: 100%;}
 .default-thumb figure img{height: 525px; border-radius: 40px;}
 .default-thumb .fluid-width-wrapper {height: 100%;}
 .default-thumb-two {margin-top:64px; margin-bottom: 64px; position: relative; clear: both; width: 100%; min-height: 361px; display: flex; flex-wrap: wrap;}
