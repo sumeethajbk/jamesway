@@ -101,7 +101,7 @@ body {font-family: 'Neue Haas Unica Pro', sans-serif; color:var(--body-text); fo
 .container-md {max-width:1080px; margin:0 auto; width:100%;}
 .container-sm {max-width: 900px; margin: 0 auto; width: 100%;}
 .btn {display:block;}
-.btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:16px;}
+.btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:16px; align-items: center;}
 .optional-text {font-size:1rem; color:var(--navy); font-weight: bold; margin:0 0 18px 0; display:block; line-height: 1.25; width: 100%;  letter-spacing: 1.28px;}
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--dark); text-decoration: none;}
@@ -124,13 +124,9 @@ section p a:hover:after, section li a:hover:after {width: 100%; background: var(
 
 
 /* Read More */
-.readmore {position: relative; display: inline-block; width: fit-content; font-size: 1rem; font-weight: bold;}
-.readmore:after {content: ''; position: absolute; display: block; margin: auto; height: 4px; width: 0; bottom:0; transition: width .5s ease, background-color .5s ease; left: 50%; transform: translate(-50%, 0);}
-.readmore:hover:after {width: 100%; background: var(--brand-mint);}
-.readmore.reverse {color: var(--brand-mint);}
-.readmore.reverse:after {display: none;}
-.readmore.reverse:hover {color: var(--white);}
-
+.readmore {position: relative; display: flex; flex-wrap: wrap; gap:9px; align-items: center; width: fit-content; font-size: 1rem; font-weight: 700;}
+.readmore:after {content: "\f061"; position: relative; display: inline-block; font-family: "Font Awesome 6 Sharp";}
+.readmore:hover:after {animation: bounceAlpha 1.4s ease-in-out infinite;}
 
 /* Background Bg */
 .background-bg {top:0; left:0; right:0; bottom:0; width:100%; height:100%; position:absolute; z-index:-1; }
@@ -168,10 +164,10 @@ img.mobile {display:none;}
 
 .play-btn-main {top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; position: absolute; z-index: 1;}
 .play-btn {width:100px; height: 100px; position: relative; transition: 0.2s all ease-in-out; background-color:var(--navy); border-radius: 50%;}
-.play-btn:before {content: ""; position: absolute; z-index: 0; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); display: block; width: 80px;  height: 80px; background:var(--navy); border-radius: 50%; animation: pulse-border 1500ms ease-out infinite;}
-.play-btn:after {content: ""; position: absolute; z-index: 1; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); display: block; width: 80px; height: 80px; background:var(--navy); border-radius: 50%; transition: all 200ms;}
-.play-btn span {display:block; position: relative; z-index: 2;} 
-.play-btn span img {border-radius: 0;}
+.play-btn:before {content: ""; position: absolute; z-index: 0; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); display: block; width: 100px;  height: 100px; background:var(--navy); border-radius: 50%; animation: pulse-border 1500ms ease-out infinite;}
+.play-btn:after {content: ""; position: absolute; z-index: 1; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); display: block; width: 100px; height: 100px; background:var(--navy); border-radius: 50%; transition: all 200ms;}
+.play-btn span {display:block; position: relative; z-index: 2; width: 38px; height: 33px;} 
+.play-btn span img {border-radius: 0; width: 100%; height: 100%;}
 
 
 .iframe-container {overflow: hidden; padding-top: 56.25%; /* 16:9*/ position: relative;}
@@ -308,7 +304,7 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 
 /* Full & Fluid width */
 .fluid-width {width: 100vw!important; left: 50%; position: relative; margin-left: -50vw; margin-bottom: 39px;}
-.fluid-width-wrapper {max-width: 1360px; margin: 0 auto; padding: 0 40px;}
+.fluid-width-wrapper {max-width: 1080px; margin: 0 auto;}
 .full_width{width: 100% !important; max-width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; float: none !important; display: block !important; padding-left: 0 !important; padding-right: 0 !important; left: 0 !important;}
 .btn-full{width: 100%;}
 .btn-full .button, .btn-full button {width: 100%;}
@@ -359,19 +355,12 @@ body .cky-btn-revisit-wrapper {position: fixed;}
 
 
 @media only screen and (max-width:767px) and (min-width:200px) {  
-    
-    ul {margin: 0 0 7px 25px;}
-    ul > li::before {width: 9px; height: 9px; left: -18px;}
-    th {font-size: 1.25rem;}
-    td {padding: 16px 12px 16px;}
-    table tbody tr td:first-child {font-size: 0.875rem;}
-    table {margin: 20px 0 21px;}
-    blockquote {clip-path: polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px)); padding:92px 20px 32px 20px; margin: 20px 0 10px;}
-    blockquote::before {top: 20px;}
-    blockquote p {font-size: 1rem;}
-    
-    ol {margin: 0 0 7px 27px;}
-    
+	.h2 {font-size: 2.5rem; line-height: 1.15; margin-bottom: 18px; font-weight: 700;}
+	
+	.slick-arrow {width: 28px; height: 28px;}
+	.slick-arrow span {line-height: 0;}
+	.slick-arrow span i {font-size: 11px; line-height: 0;}
+	
     
     .hide-in-mobile {display:none;}    
     
@@ -394,7 +383,8 @@ body .cky-btn-revisit-wrapper {position: fixed;}
     
     .btn-center {margin: 24px 0 0 0;}
     
-    .play-btn {width: 50px; height: 50px;}
+    .play-btn, .play-btn::before, .play-btn::after {width: 50px; height: 50px;}
+	.play-btn span {width: 17px; height: 15px;}
     
     .fluid-width-wrapper {padding: 0; margin: 0 20px;}
     .fluid-width {margin-bottom: 20px;}

@@ -1,0 +1,21 @@
+.micro-cta-module {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; margin: 40px 0; background: var(--light-blue); border-radius: 20px;}
+.micro-cta-main {margin: 0 auto; width: 100%; flex-direction: row-reverse;}
+.micro-cta-main .h3 {margin-bottom:31px;}
+
+.micro-cta-main .micro-cta-text {clear: both; padding:40px; position: relative; flex:1; font-size: 1rem;}
+.micro-cta-main .micro-cta-text .optional-text {font-size: 0.75rem; letter-spacing: normal; opacity: 0.5; font-weight: normal; color: var(--dark);}
+.micro-cta-main .micro-cta-text p {margin-bottom: 32px;}
+.micro-cta-main .micro-cta-text .btn-wrap .button {gap: 16px;}
+.micro-cta-thumb {width: 260px;}
+
+/*-- media starts here --*/
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .micro-cta-main {min-height: 415px; align-items: flex-end;}
+    .micro-cta-main .h4 {margin-bottom:32px;}
+    .micro-cta-main .h4 span::before {left:-21px; bottom: -6px; z-index: -1;}
+    .micro-cta-main .micro-cta-text {padding: 40px 24px 18px; max-width: 100%;} 
+    .micro-cta-main .micro-cta-text p {margin-bottom: 24px;}
+    .micro-cta-main .micro-cta-text .btn-wrap {justify-content: center; gap:13px;}
+}

@@ -7,7 +7,7 @@
 .repeater-text .optional-text {text-transform: uppercase;}
 .repeater-text .h2 {margin-bottom: 11px;}
 .repeater-text ul, .repeater-text ol {margin:-7px 0 17px 24px;}
-.repeater-text ul > li:before {width:4px; height:4px; top: 11px; left: -14px; background:var(--dark);}
+.repeater-text ul > li:before {top: 11px; left: -14px; background:var(--dark);}
 .repeater-text .btn {padding:20px 0 0 0;}
 
 .repeater-img{width: 46.875%; flex-grow: 1; max-height: 400px; height: 100%;}
@@ -23,7 +23,12 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-    .repeater-main {gap:40px; padding: 40px 0;}
+    .repeater-main {gap:78px; padding:47px 0 47px;}
 	.repeater-img figure img {border-radius: 20px;}
+	.repeater-text .h2 {font-size: 2rem; margin-bottom: 27px;}
+	.repeater-text .optional-text {margin: 0 0 21px 0;}
+	.repeater-text .btn {padding: 8px 0 0 0;}
+	.repeater-text .btn .button {width: 100%;}
+	.repeater-text ul, .repeater-text ol {margin: 0px 0 17px 24px;}
 	
 }

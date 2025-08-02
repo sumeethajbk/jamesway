@@ -8,7 +8,7 @@ a:hover, a:active {outline: 0;}
 a:hover {color: var(--anchor-hover);}
 h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 23px; color: var(--heading); font-family: 'eb-garamond', sans-serif;}
 h1 {font-size: 3.75rem; line-height: 1.07; margin-bottom: 19px; font-weight: 600;}
-h2 {font-size: 3rem; line-height: 1; margin-bottom: 18px; font-weight: 700;}
+h2 {font-size: 3rem; line-height: 1; margin-bottom: 20px; font-weight: 700;}
 h3 {font-size: 2.25rem; line-height: 1.11; margin-bottom: 18px; font-weight: 600;}
 h4 {font-size: 1.5rem; line-height: 1.17; margin-bottom: 19px; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 900;}
 h5 {font-size: 1.125rem; line-height: 1.56; margin-bottom:18px; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 900;}
@@ -25,7 +25,7 @@ pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-
 blockquote, q {-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none;}
 blockquote {padding:112px 40px 56px 40px; position: relative; margin:40px 0 30px; background: var(--brand-chartreuse); clip-path: polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));}
 blockquote p {font-size: 1.5rem; font-weight:bold; line-height: 1.5; color: var(--base-orange);}
-blockquote:before {content: "" ; width: 35px; background:url("../images/open-quote.svg") 0 0 no-repeat; height: 40px; display: block; position: absolute; top: 40px;}
+blockquote:before {content: "" ; width: 35px; background:url("../images/quote.svg") 0 0 no-repeat; height: 40px; display: block; position: absolute; top: 40px;}
 
 small {font-size: small;}
 big {font-size: 125%;}
@@ -34,13 +34,13 @@ sup {bottom: 8px; font-size: 0.765rem; left: -5px;}
 sub {top: 0;}
 dl {margin-bottom: 24px;}
 dd {margin-bottom: 24px;}
-ul {list-style: none; margin:0 0 28px 24px;}
+ul {list-style: none; margin:0 0 28px 26px;}
 ul > li {counter-increment: li; position: relative; margin-bottom: 9px;}
-ul > li:before {content: ""; width: 11px; height: 11px; display: block; position: absolute; top:8px; left: -20px; background-color: var(--base-foreground); border-radius: 50%;}
+ul > li:before {content: ""; width:4px; height:4px; display: block; position: absolute; top:11px; left: -15px; background-color: var(--dark); border-radius: 50%;}
 li > ul {margin: 25px 0 26px 40px;}
-ol {counter-reset: section; list-style: none; margin:0 0 28px 24px;}
+ol {counter-reset: section; list-style: none; margin:0 0 28px 27px;}
 ol > li {counter-increment: li; position: relative; margin-bottom:9px;}
-ol > li:before {counter-increment: section; content: counter(section, decimal) "."; left: -21px; position: absolute;}
+ol > li:before {counter-increment: section; content: counter(section, decimal) "."; left: -20px; position: absolute;}
 li > ol {margin: 25px 0 26px 40px;}
 img {-ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; max-width: 100%; height: auto;}
 figure {margin: 0;}
@@ -98,7 +98,7 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 /* Default */
 button, .button  {display: inline-block; font-size:1.125rem; font-weight: 700; line-height:1.33; padding:15px 12px; vertical-align: middle; cursor: pointer; border:0 none; background-color: var(--button); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--white); font-family:"Neue Haas Unica Pro", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius:10px; outline: 0; box-sizing: border-box; text-transform:none; min-width: 226px;}
 button:hover, .button:hover {color: var(--navy); background-color: var(--button-hover);}
-button:focus, .button:focus, button:active, .button:active {background-color: var(--button); color: var(--navy);}
+button:focus, .button:focus, button:active, .button:active {background-color: var(--button); color: var(--white);}
 
 .yellow-btn {background: var(--yellow-btn); color: var(--yellow-btn-hover);}
 .yellow-btn:hover {background: var(--white); color: var(--yellow-btn-hover);}
@@ -107,6 +107,8 @@ button:focus, .button:focus, button:active, .button:active {background-color: va
 .yellow-gbtn {background: var(--yellow-gbtn); color: var(--yellow-btn-hover);}
 .yellow-gbtn:hover {background: var(--white); color: var(--yellow-btn-hover);}
 .yellow-gbtn:active {background: var(--yellow-gbtn); color: var(--yellow-btn-hover);}
+
+.sm {position: relative; font-size: 1rem; font-weight: 700; padding: 9px 12px 10px; min-width: inherit;}
 
 .arrow-btn {position: relative; display: flex; flex-wrap: wrap; gap:9px; min-width: inherit; font-size: 1rem; align-items: center; font-weight: 700; padding: 9px 20px 10px; justify-content: center;}
 .arrow-btn:after {content: "\f061"; position: relative; display: inline-block; font-family: "Font Awesome 6 Sharp";}
