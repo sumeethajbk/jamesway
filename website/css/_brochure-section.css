@@ -1,0 +1,13 @@
+.brochure-section{background-color: var(--brandbook-gray-light);}
+.brochure-main{}
+.brochure-text{flex: 0 0 600px;}
+.brochure-text .h2{font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 700; margin-bottom: 0;}
+.brochure-text p{font-size: 1rem;}
+.brochure-text .optional-text{color: var(--dark); opacity: 0.5}
+.brochure-img{ flex: 1; margin-bottom: 30px;}
+.download-wrap{gap: 20px;}
+.download-wrap .arrow-btn::after { content: "\f063";}
+.download-wrap .arrow-btn:hover::after{ animation: bounceTopToBottom 1.4s ease-in-out infinite;}
+.download-wrap .arrow-btn{width: 212px; font-size: 1.125rem;}
+
+
