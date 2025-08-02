@@ -14,7 +14,6 @@
 
 .general-default-container {float: left; width: 100%; padding:80px 0 80px 0; position: relative; z-index: 1;}
 .general-default-container .container .container {padding: 0;}
-.general-default-container .micro-cta-module {margin: 40px 0 63px 0;}
 .general-default-container .general-default-inner  h3 {padding: 40px 0 0 0;}
 .general-default-container .default-main {justify-content: space-between; gap:8.125%;}
 .general-default-container .default-main  h3 {padding: 13px 0 0 0;}

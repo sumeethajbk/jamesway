@@ -117,7 +117,7 @@ section p a:hover:after, section li a:hover:after {width: 100%; background: var(
 
 
 /* Read More */
-.readmore {position: relative; display: flex; flex-wrap: wrap; gap:9px; align-items: center; width: fit-content; font-size: 1rem; font-weight: 700;}
+.readmore {position: relative; display: flex; flex-wrap: wrap; gap:9px; align-items: center; width: fit-content; font-size: 1rem; font-weight: 700; line-height: 1;}
 .readmore:after {content: "\f061"; position: relative; display: inline-block; font-family: "Font Awesome 6 Sharp";}
 .readmore:hover:after {animation: bounceAlpha 1.4s ease-in-out infinite;}
 
@@ -141,6 +141,8 @@ picture.object-fit {width:100%; height:100%; display:block;}
 .object-fit img {width:100%; height:100%; font-family:"object-fit:cover"; object-fit:cover; -o-object-fit:cover; object-position:50% 50%; -o-object-position:50% 50%;}
 img.mobile {display:none;}
 
+/* Divider */
+.divider-module {clear: both; width: 100%; position: relative; z-index: 1;}
 
 /* Video/video popup */
 .video-wrap {margin:62px 0 62px 0; position: relative; clear: both; overflow: hidden; z-index: 1;}
@@ -305,13 +307,6 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 
 
 html.no-scroll {overflow:hidden;}
-
-
-.single-cta {clear: both; width: 100%; position: relative; background: var(--brand-blue); clip-path: var(--path-16); margin: 40px 0 0 0;}
-.single-cta .h3 {margin: 0; padding: 0 0 16px 0;}
-.single-cta .h3 a {display:block; padding: 16px 82px 16px 16px; color: var(--brand-mint); position: relative;}
-.single-cta .h3 a:after{content: "\f061"; font-size: 2.5rem; font-family: "Font Awesome 6 Sharp"; font-weight: normal; line-height: 1; position: absolute; right:32px; top: 0; bottom: 0; margin: auto; display: flex; align-items: center; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1);}
-.single-cta .h3 a:hover:after {right: 22px;}
 
 body .cky-btn-revisit-wrapper {position: fixed;}
 
