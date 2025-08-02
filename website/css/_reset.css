@@ -108,6 +108,8 @@ button:focus, .button:focus, button:active, .button:active {background-color: va
 .yellow-gbtn:hover {background: var(--white); color: var(--yellow-btn-hover);}
 .yellow-gbtn:active {background: var(--yellow-gbtn); color: var(--yellow-btn-hover);}
 
+.sm {position: relative; font-size: 1rem; font-weight: 700; padding: 9px 12px 10px; min-width: inherit;}
+
 .arrow-btn {position: relative; display: flex; flex-wrap: wrap; gap:9px; min-width: inherit; font-size: 1rem; align-items: center; font-weight: 700; padding: 9px 20px 10px; justify-content: center;}
 .arrow-btn:after {content: "\f061"; position: relative; display: inline-block; font-family: "Font Awesome 6 Sharp";}
 .arrow-btn:hover:after {animation: bounceAlpha 1.4s ease-in-out infinite;}

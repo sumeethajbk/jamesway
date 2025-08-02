@@ -94,7 +94,7 @@ body {font-family: 'Neue Haas Unica Pro', sans-serif; color:var(--body-text); fo
 .container-md {max-width:1080px; margin:0 auto; width:100%;}
 .container-sm {max-width: 900px; margin: 0 auto; width: 100%;}
 .btn {display:block;}
-.btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:16px;}
+.btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:16px; align-items: center;}
 .optional-text {font-size:1rem; color:var(--navy); font-weight: bold; margin:0 0 18px 0; display:block; line-height: 1.25; width: 100%;  letter-spacing: 1.28px;}
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--dark); text-decoration: none;}
@@ -117,13 +117,9 @@ section p a:hover:after, section li a:hover:after {width: 100%; background: var(
 
 
 /* Read More */
-.readmore {position: relative; display: inline-block; width: fit-content; font-size: 1rem; font-weight: bold;}
-.readmore:after {content: ''; position: absolute; display: block; margin: auto; height: 4px; width: 0; bottom:0; transition: width .5s ease, background-color .5s ease; left: 50%; transform: translate(-50%, 0);}
-.readmore:hover:after {width: 100%; background: var(--brand-mint);}
-.readmore.reverse {color: var(--brand-mint);}
-.readmore.reverse:after {display: none;}
-.readmore.reverse:hover {color: var(--white);}
-
+.readmore {position: relative; display: flex; flex-wrap: wrap; gap:9px; align-items: center; width: fit-content; font-size: 1rem; font-weight: 700;}
+.readmore:after {content: "\f061"; position: relative; display: inline-block; font-family: "Font Awesome 6 Sharp";}
+.readmore:hover:after {animation: bounceAlpha 1.4s ease-in-out infinite;}
 
 /* Background Bg */
 .background-bg {top:0; left:0; right:0; bottom:0; width:100%; height:100%; position:absolute; z-index:-1; }
