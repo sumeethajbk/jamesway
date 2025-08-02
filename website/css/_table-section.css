@@ -1,0 +1,8 @@
+.table-section{padding: 80px 0 0;}
+.table-section .mini-intro span.optional-text{margin-bottom: 10px;}
+.table-section .mini-intro .h2{margin-bottom: 10px;}
+.table-section .mini-intro p{font-size: 1.25rem;}
+table{margin: 40px 0;}
+table thead tr:first-child th:first-child{color: var(--navy); opacity: 0.5; font-size: 0.875rem;}
+table thead tr th{font-size: 1.25rem; font-weight: 900; color: var(--navy)}
+table tbody tr td{padding: 8px 16px 8px;}

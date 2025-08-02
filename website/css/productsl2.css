@@ -7,7 +7,14 @@
 @import url("_featured-res-module.css");
 @import url("_contact-form.css");
 @import url("_signup-module.css");
+@import url("_brochure-section.css");
+@import url("_table-section.css");
 
 
 
 .contact-section{background-color: var(--tiny-gray);}
+.intro-module{background-color: var(--brandbook-gray-light);}
+.intro-block-section{background-color: var(--brandbook-gray-light)}
+.request-section{background-color: var(--brandbook-gray-light);}
+
+
