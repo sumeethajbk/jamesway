@@ -20,7 +20,7 @@
 .contact-section{background-color: var(--tiny-gray);}
 .intro-module{background-color: var(--brandbook-gray-light);}
 .intro-block-section{background-color: var(--brandbook-gray-light)}
-.intro-block-row{margin-bottom: 72px;}
+.intro-block-row{margin-bottom: 72px; gap: 72px 30px;}
 .intro-block-row:last-child{margin-bottom: 0;}
 .request-section{background-color: var(--brandbook-gray-light);}
 
@@ -30,3 +30,11 @@ ul.slick-dots li.slick-active button {
 }
 
 
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+   .intro-block-row .slick-track{display: flex; gap: 30px}
+    .intro-block-row .slick-list{overflow: inherit;}
+    .testimonial-module { padding: 40px 0; }
+     .repeater-main {padding: 40px 0 64px;}
+
+}
