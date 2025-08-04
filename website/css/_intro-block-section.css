@@ -1,5 +1,6 @@
 .intro-block-section{padding: 0 0 72px;}
-.intro-block-row{gap: 72px 30px; }
+.intro-block-main{gap: 72px 30px;}
+
 .intro-list{flex: 0 0 calc(25% - 24px); }
 .intro-img{margin-bottom: 28px;}
 .intro-img img{border-radius: 20px;}
@@ -15,8 +16,9 @@
 
 @media only screen and (max-width: 1023px) and (min-width:200px){
 	
-    .intro-block-row .slick-track{display: flex; gap: 30px}
-    .intro-block-row .slick-list{overflow: inherit;}
+    .intro-block-main .slick-track{display: flex; gap: 30px}
+    .intro-block-main .slick-list{overflow: inherit;}
+ 
     .intro-list.slick-slide{ flex: 0 0 296px; }
     .intro-text-blc p { font-size: 1.125rem; }
     .intro-block-section { padding: 0px 0 13px; }
