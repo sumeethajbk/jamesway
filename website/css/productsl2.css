@@ -9,12 +9,24 @@
 @import url("_signup-module.css");
 @import url("_brochure-section.css");
 @import url("_table-section.css");
+@import url("_testimonial-module.css");
 
+.default-banner-main {align-items: center; min-height: 600px}
+.default-banner-main .default-banner-text {max-width: 538px;}
+.default-banner-main .default-banner-text p {font-size: 1.25rem;}
+.banner-bg:after{left: 0; top: 0; width: 100%; position: absolute; background-color: rgba(11, 11, 10, 0.5);opacity: 0.6; z-index: 1; height: 100%; display: block; content: ""; }
 
 
 .contact-section{background-color: var(--tiny-gray);}
 .intro-module{background-color: var(--brandbook-gray-light);}
 .intro-block-section{background-color: var(--brandbook-gray-light)}
+.intro-block-row{margin-bottom: 72px;}
+.intro-block-row:last-child{margin-bottom: 0;}
 .request-section{background-color: var(--brandbook-gray-light);}
+
+ul.slick-dots li button {background-color: var(--white); opacity: 1;}
+ul.slick-dots li.slick-active button {
+  opacity: 0.3;
+}
 
 
