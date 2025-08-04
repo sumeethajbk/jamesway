@@ -1,6 +1,6 @@
 .brochure-section{background-color: var(--brandbook-gray-light);}
 .brochure-main{}
-.brochure-text{flex: 0 0 600px;}
+.brochure-text{flex: 0 0 600px; padding: 40px 0;}
 .brochure-text .h2{font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 700; margin-bottom: 0;}
 .brochure-text p{font-size: 1rem;}
 .brochure-text .optional-text{color: var(--dark); opacity: 0.5}

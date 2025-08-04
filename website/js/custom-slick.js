@@ -38,6 +38,45 @@ jQuery(document).ready(function () {
     }
   });
 /* End of Intro slider */
+
+   /* Intro  row Slider */
+  var windowWidth = jQuery(window).width();
+  function introSlider() {
+    var $introslide = jQuery('.intro-block-row');
+    var introlist = $introslide.children().length;
+    if (windowWidth <= 1023) {
+     
+        $introslide.slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          speed: 2000,
+          dots: true,
+          arrows: false,
+          variableWidth: true,
+          draggable: true,
+          swipeToSlide: true,
+          touchThreshold: 100,
+          autoplay: false,
+          autoplaySpeed: 0,
+       
+          cssEase: 'linear',
+        });
+      
+    } else {
+      
+    }
+  }
+  introSlider();
+
+  jQuery(window).on('resize load', function () {
+    var newScreenWidth = jQuery(window).width();
+    if (newScreenWidth !== windowWidth) {
+      windowWidth = newScreenWidth;
+      introSlider();
+    }
+  });
+/* End of Intro row slider */
     
 	
 /* Testimonial Slider */

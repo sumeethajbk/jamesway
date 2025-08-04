@@ -1,5 +1,5 @@
 .video-wrap-section{background-color: var(--brandbook-gray-light);clear: both; width: 100%;}
-.video-wrap-main{padding: 82px 0 97px;}
+.video-wrap-main{padding: 82px 0 0px;}
 .video-intro{text-align: center; max-width: 800px; margin: 0 auto 49px;}
 .video-intro p{font-weight: 700; font-size: 20px;}
 .video-img{z-index: 1;}
