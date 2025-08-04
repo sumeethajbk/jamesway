@@ -36,6 +36,7 @@
 	.featured-res-top-rt-inner {flex-direction: inherit;}
 	.featured-res-top-rt-inner .featured-res-post .featured-res-thumb {height: 186px; overflow: hidden; width: 100%;}
 	.featured-res-top-rt-inner .featured-res-post .featured-res-thumb img {border-radius: 10px 10px 0 0;}
+	.featured-res-top-rt-inner{margin-bottom: 40px;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px){

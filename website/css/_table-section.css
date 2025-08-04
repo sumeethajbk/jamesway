@@ -1,5 +1,15 @@
-.table-section{padding: 0}
+.table-section{padding: 84px 0 0}
 .table-section .mini-intro span.optional-text{margin-bottom: 10px; letter-spacing: normal;}
 .table-section .mini-intro .h2{margin-bottom: 10px;}
 .table-section .mini-intro p{font-size: 1.25rem;}
 table{margin: 35px 0;}
+
+
+@media only screen and (max-width: 767px) and (min-width:200px){
+ .table-section { padding: 10px 0 0; }
+.table-section .mini-intro{padding: 0 30px;}
+.table-section .mini-intro .h2 {font-size: 2rem;}
+.table-section .mini-intro p { font-size: 1rem; }
+
+
+}

@@ -1,0 +1,63 @@
+@import url("_default-banner.css");
+@import url("_testimonial-module.css");
+@import url("_featured-res-module.css");
+@import url("_signup-module.css");
+
+
+
+.default-banner-main{min-height: 780px; align-items: center;}
+.default-banner-main .default-banner-text{max-width: 450px;}
+.default-banner-main .default-banner-text p {font-size: 1.25rem; font-weight: 400;}
+
+.featured-res-module{padding-top: 0;}
+
+
+.service-intro-section{clear: both; width: 100%; display: block; position: relative;}
+.service-intro-main{padding: 80px 0 40px; justify-content: space-between;}
+.service-intro-lt{flex: 0 0 70.5%; margin-right: 20px;}
+.service-intro-rt{flex: 0 0 calc(100% - 70.5%)}
+.service-intro-lt:only-child{flex:0 0  100%;}
+.service-intro-lt p{font-size: 1.25rem; font-weight: 500;}
+
+
+.services-block-wrap{padding: 40px 0 80px;}
+.services-block-main{gap: 80px;}
+.services-block-list{flex: 0 0 calc(33.33% - 55px);}
+.services-block-thumb{ margin-bottom: 24px;}
+.services-block-thumb img{border-radius: 20px;}
+.services-block-text .h4{font-weight: 800; margin-bottom: 24px;}
+.services-block-text p{font-size: 1rem; font-weight: 400;}
+.services-block-text .button{min-width: 143px;}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 767px) {
+.services-block-wrap{padding-bottom: 40px;}
+
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+.default-banner-main{min-height: 655px; align-items: flex-end; padding: 50px 0;}
+
+
+
+.service-intro-main{flex-direction: column;}
+.service-intro-lt{flex: 0 0 100%; margin-right: inherit; margin-bottom: 24px;}
+.service-intro-lt p {font-size: 1rem;}
+
+.services-block-main .slick-track { display: flex !important; gap: 30px;}
+.services-block-thumb img {width: fit-content;}
+.services-block-list.slick-slide { flex: 0 0 296px; }
+.services-block-main .slick-list{overflow: inherit;}
+
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+.service-intro-main { padding: 30px 0 30px};
+
+.services-block-wrap { padding: 40px 0 20px; }
+.testimonial-module{padding-bottom: 0;}
+
+
+}

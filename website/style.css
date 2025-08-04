@@ -274,7 +274,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .frm_forms .frm_filed_wrapper {gap: 16px; justify-content: space-between; }
 .frm_forms .frm_filed_wrapper .frm_form_field {margin: 0!important;}
 .frm_forms .frm_filed_wrapper .disclaimer {opacity: 0.45; color: var(--base-foreground);}
-.frm_forms .frm_filed_wrapper .frm_html_container {font-size: 1rem; line-height: 1.4; text-align: right;}
+.frm_forms .frm_filed_wrapper .frm_html_container {font-size: 1rem; line-height: 1.4; text-align: right; font-style: italic;}
 body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_other_full) {width: 100%; margin-top: 5px;}
 
 /* Form Field */

@@ -178,4 +178,10 @@ h3 {font-size: 2.25rem; line-height: 1.11; margin-bottom: 18px; font-weight: 600
 h4 {font-size: 1.5rem; line-height: 1.17; margin-bottom: 19px; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 900;}
 h5 {font-size: 1.125rem; line-height: 1.56; margin-bottom:18px; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 900;}
 h6 {font-size: 1rem; line-height: 1.5; margin-bottom: 18px; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 900;}
+
+.table-section .container{padding: 0;}
+table tbody tr td:first-child { width: 31%; font-size: 14px; font-style: italic; font-weight: 400;}
+table thead tr th { font-size: 1rem; padding: 16px 10px  5px 16px;}
+table tbody tr td { padding: 8px 21px 8px; vertical-align: middle;}
+table thead tr th:first-child {padding: 0 16px;}
 }

@@ -81,6 +81,48 @@ jQuery(document).ready(function () {
   /* End of Intro row slider */
 
 
+
+   /* servcie  Slider */
+  var windowWidth = jQuery(window).width();
+
+  function serviceSlider() {
+    var $serviceslide = jQuery('.services-block-main');
+    var servicelist = $serviceslide.children().length;
+    if (windowWidth <= 1023) {
+
+      $serviceslide.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 2000,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
+        draggable: true,
+        swipeToSlide: true,
+        touchThreshold: 100,
+        autoplay: false,
+        autoplaySpeed: 0,
+        adaptiveHeight: true,
+        cssEase: 'linear',
+      });
+
+    } else {
+
+    }
+  }
+  serviceSlider();
+
+  jQuery(window).on('resize load', function () {
+    var newScreenWidth = jQuery(window).width();
+    if (newScreenWidth !== windowWidth) {
+      windowWidth = newScreenWidth;
+      serviceSlider();
+    }
+  });
+  /* End of Intro slider */
+
+
   /* Testimonial Slider */
   jQuery(".testimonial-slider").slick({
     slidesToShow: 1,

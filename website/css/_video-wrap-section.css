@@ -4,3 +4,18 @@
 .video-intro p{font-weight: 700; font-size: 20px;}
 .video-img{z-index: 1;}
 .video-img:after{position: absolute; width: 100%; height: 100%; left: 0; top: 0; content: ""; background-image: linear-gradient(119deg, #d9d5d5 7%, #bcb9b9 96%); z-index: -1;}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+  .video-wrap-section .container{padding: 0;}
+  .video-wrap-main  .play-btn span {width: 38px; height: 33px; right: -2px;}
+  .video-wrap-main  .play-btn, .video-wrap-main .play-btn::before, .video-wrap-main .play-btn::after {width: 100px; height: 100px;}
+
+  .video-wrap-main .play-btn span img {width: inherit; height: inherit;}
+  .video-wrap-main{padding: 30px 0 0 ;}
+  .video-intro{padding: 0 30px; margin: 0 auto;}
+  .video-intro p {font-size: 1rem;}
+
+
+}
