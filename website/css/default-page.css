@@ -5,6 +5,7 @@
 @import url("_testimonial-module.css");
 @import url("_cta-module.css");
 @import url("_micro-cta-module.css");
+@import url("_block-module.css");
 @import url("_accordion.css");
 @import url("_featured-res-module.css");
 @import url("_signup-module.css");
@@ -14,9 +15,7 @@
 
 .general-default-container {float: left; width: 100%; padding:80px 0 80px 0; position: relative; z-index: 1;}
 .general-default-container .container .container {padding: 0;}
-.general-default-container .general-default-inner  h3 {padding: 40px 0 0 0;}
 .general-default-container .default-main {justify-content: space-between; gap:8.125%;}
-.general-default-container .default-main  h3 {padding: 13px 0 0 0;}
 .general-default-container p:first-of-type span {font-size: 1.5rem; line-height: 1.5; display: block;}
 
 .default-inner {position: relative;}
@@ -25,7 +24,7 @@
 .default-thumb {margin-top:62px; margin-bottom: 65px; position: relative; clear: both; width: 100%;}
 .default-thumb figure img{height: 525px; border-radius: 40px;}
 .default-thumb .fluid-width-wrapper {height: 100%;}
-.default-thumb-two {margin-top:64px; margin-bottom: 64px; position: relative; clear: both; width: 100%; min-height: 361px; display: flex; flex-wrap: wrap;}
+.default-thumb-two {margin-top:62px; margin-bottom: 65px; position: relative; clear: both; width: 100%; min-height: 361px; display: flex; flex-wrap: wrap;}
 .default-thumb-two .fluid-width-wrapper {display: flex; flex-wrap: nowrap; gap:8px; align-items: stretch;}
 .default-thumb-two .default-thumb-flex {flex: 1; height: 100%;}
 .default-thumb-two figure img{border-radius: 20px; height:361px;}

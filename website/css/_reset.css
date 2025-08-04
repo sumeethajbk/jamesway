@@ -9,7 +9,7 @@ a:hover {color: var(--anchor-hover);}
 h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 23px; color: var(--heading); font-family: 'eb-garamond', sans-serif;}
 h1 {font-size: 3.75rem; line-height: 1.07; margin-bottom: 19px; font-weight: 600;}
 h2 {font-size: 3rem; line-height: 1; margin-bottom: 20px; font-weight: 700;}
-h3 {font-size: 2.25rem; line-height: 1.11; margin-bottom: 18px; font-weight: 600;}
+h3 {font-size: 2.25rem; line-height: 1.11; margin-bottom: 17px; font-weight: 600; font-family: 'Neue Haas Unica Pro', sans-serif;}
 h4 {font-size: 1.5rem; line-height: 1.17; margin-bottom: 19px; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 900;}
 h5 {font-size: 1.125rem; line-height: 1.56; margin-bottom:18px; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 900;}
 h6 {font-size: 1rem; line-height: 1.5; margin-bottom: 18px; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 900;}
@@ -85,9 +85,7 @@ tr:last-child td{border-bottom: 0;}
 
 caption, th, td {text-align: center;}
 del {color: #231f20;}
-hr {display: block; background:var(--black); height: 1px; width: 100%; vertical-align: middle; margin: 63px 0; border: 0 none;}
-/* hr {display: block; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; */
-/* background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%; vertical-align: middle; margin: 81px 0; border: 0 none;} */
+hr {display: block; background:var(--black); height: 1px; width: 100%; vertical-align: middle; margin: 63px 0; border: 0 none; opacity: 0.5;}
 ::selection {background-color: var(--navy); color: #fff;}
 ::-moz-selection {background-color: var(--navy); color: #fff;}
 
