@@ -23,9 +23,9 @@ p:last-child {margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 15px; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
 blockquote, q {-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none;}
-blockquote {padding:112px 40px 56px 40px; position: relative; margin:40px 0 30px; background: var(--brand-chartreuse); clip-path: polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));}
-blockquote p {font-size: 1.5rem; font-weight:bold; line-height: 1.5; color: var(--base-orange);}
-blockquote:before {content: "" ; width: 35px; background:url("../images/quote.svg") 0 0 no-repeat; height: 40px; display: block; position: absolute; top: 40px;}
+blockquote {padding:95px 40px 38px 40px; position: relative; margin:40px 0 40px; background:var(--brandbook-gray-light); border-radius: 20px;}
+blockquote p {font-size: 1.5rem; font-weight:800; line-height: 1.17; color: var(--dark);}
+blockquote:before {content: "" ; width: 34px; background:url("../images/blue-quote.svg") 0 0 no-repeat; height:24px; display: block; position: absolute; top: 40px;}
 
 small {font-size: small;}
 big {font-size: 125%;}
@@ -140,12 +140,12 @@ p > embed, p > iframe, p > object, span > embed, span > iframe, span > object {m
 .alignleft {float: left;}
 .alignright {float: right;}
 .aligncenter {display: block; margin-left: auto; margin-right: auto; text-align: center;}
-blockquote.alignleft, figure.wp-caption.alignleft, img.alignleft {margin:6px 32px 23px 0;}
+blockquote.alignleft, figure.wp-caption.alignleft, img.alignleft {margin:6px 21px 10px 0;}
 .wp-caption.alignleft {margin: 5px 55px 37px 0;}
-blockquote.alignright, figure.wp-caption.alignright, img.alignright {margin:6px 0 23px 32px;}
+blockquote.alignright, figure.wp-caption.alignright, img.alignright {margin:6px 0 10px 21px;}
 .wp-caption.alignright {margin: 7px 0 37px 55px;}
-blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {margin-top:24px; margin-bottom:23px;}
-img.alignnone {margin:24px 0 23px; display: block; clear: both;}
+blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {margin-top:14px; margin-bottom:11px;}
+img.alignnone {margin:14px 0 11px; display: block; clear: both;}
 .hide {display: none;}
 .bypostauthor > article .fn:before, .comment-edit-link:before, .comment-reply-link:before, .comment-reply-login:before, .comment-reply-title small a:before, .contributor-posts-link:before, .menu-toggle:before, .search-toggle:before, .slider-direction-nav a:before, .widget_twentyfourteen_ephemera .widget-title:before {-webkit-font-smoothing: antialiased; display: inline-block; font: normal 16px/1 Genericons; text-decoration: inherit; vertical-align: text-bottom;}
 .comment-form label {display: block;}

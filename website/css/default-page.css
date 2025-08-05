@@ -8,12 +8,13 @@
 @import url("_block-module.css");
 @import url("_accordion.css");
 @import url("_featured-res-module.css");
+@import url("_single-testimonial-module.css");
 @import url("_signup-module.css");
 
 .default-banner-main .default-banner-text p {font-weight: 800;}
 .intro-module ~ .features-module {padding: 0; margin-bottom:7px;}
 
-.general-default-container {float: left; width: 100%; padding:80px 0 80px 0; position: relative; z-index: 1;}
+.general-default-container {float: left; width: 100%; padding:80px 0 78px 0; position: relative; z-index: 1;}
 .general-default-container .container .container {padding: 0;}
 .general-default-container .default-main {justify-content: space-between; gap:8.125%;}
 .general-default-container p:first-of-type span {font-size: 1.5rem; line-height: 1.5; display: block;}
@@ -31,12 +32,13 @@
 
 
 /*-- media css starts here --*/
-
+@media only screen and (max-width:1023px) and (min-width:768px) {
+.fluid-width-wrapper {padding: 0 30px;}
+}
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-	.general-default-container {padding: 21px 0 21px;}
+	.general-default-container {padding:21px 0 45px;}
     .general-default-container .micro-cta-module {margin: 39px 0 40px 0;}
-    .general-default-container .general-default-inner h3 {padding: 17px 0 0 0;}
 	
 	.default-thumb {min-height: 30vw; margin: 40px 0 40px 0; width: 100% !important; left: 0;}  
 	.default-thumb figure img {height: auto;}

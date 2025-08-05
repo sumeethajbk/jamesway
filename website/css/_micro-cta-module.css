@@ -8,7 +8,9 @@
 .micro-cta-thumb img {border-radius: 0 20px 20px 0;}
 
 /*-- media starts here --*/
-
+@media only screen and (max-width:1023px) and (min-width:768px){
+.micro-cta-main .micro-cta-text {padding:46px 30px 40px;}
+}
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .micro-cta-main .micro-cta-text .btn-wrap {justify-content: center; gap:13px;}
