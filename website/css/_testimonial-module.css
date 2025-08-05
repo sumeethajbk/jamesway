@@ -15,7 +15,7 @@
 .testimonial-text:before {content: ""; position: relative; top: 0; left: 0; display:block; background: url("../images/quote.svg") 0 0 no-repeat; width: 53px; height: 38px; margin: 0 0 55px 0;}
 .testimonial-text .author-info {width: 100%; clear: both; font-family: 'Neue Haas Unica Pro', sans-serif; font-style: normal;}
 .testimonial-text .author-name {font-size: 1.25rem; font-weight: 800; line-height: 1; margin: 0 0 5px 0;}
-.testimonial-text .author-business {font-size: 1rem; line-height: 1.25; font-family: 'neue_haas_unica_proMdIt', sans-serif;}
+.testimonial-text .author-business {font-size: 1rem; line-height: 1.25; font-family: 'neue_haas_unica_proMdIt', sans-serif; font-style: italic;}
 
 
 @media only screen and (max-width: 1299px) and (min-width:1024px) {

@@ -82,6 +82,48 @@ jQuery(document).ready(function () {
 
 
 
+  /* prod  row Slider */
+  var windowWidth = jQuery(window).width();
+
+  function prodSliders() {
+    var $prodslides = jQuery('.prod-block-row');
+    var prodlists = $prodslides.children().length;
+    if (windowWidth <= 1023) {
+
+      $prodslides.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 2000,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
+        draggable: true,
+        swipeToSlide: true,
+        touchThreshold: 100,
+        autoplay: false,
+        autoplaySpeed: 0,
+
+        cssEase: 'linear',
+      });
+
+    } else {
+
+    }
+  }
+  prodSliders();
+
+  jQuery(window).on('resize load', function () {
+    var newScreenWidth = jQuery(window).width();
+    if (newScreenWidth !== windowWidth) {
+      windowWidth = newScreenWidth;
+      prodSliders();
+    }
+  });
+  /* End of Intro row slider */
+
+
+
    /* servcie  Slider */
   var windowWidth = jQuery(window).width();
 

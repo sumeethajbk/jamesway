@@ -1,0 +1,11 @@
+.testimo-section{clear: both; display: block; position: relative; width: 100%;}
+.testimo-main{padding-bottom: 80px;}
+.testimo-row{gap: 40px;}
+.testimon-list{flex: 0 0 calc(33.33% - 27px); background-color: var(--brandbook-gray-light); padding: 32px 32px 28px 32px; border-radius: 10px;}
+.testimon-list .testimo-quote{width: fit-content; margin-bottom: 10px;}
+.testimon-list p{font-size: 1rem; font-weight: 400; margin-bottom: 16px;}
+
+.auth-wrap{gap: 17px;}
+.auth-list img{width: 67px; height: 67px;}
+.auth-info .h3{font-size: 1.125rem; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 700; margin-bottom: 0;}
+.auth-info span{opacity: 0.5;}

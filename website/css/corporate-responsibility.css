@@ -1,0 +1,17 @@
+@import url("_default-banner.css");
+@import url("_repeater-section.css");
+@import url("_counter-section.css");
+@import url("_testimo-section.css");
+@import url("_prod-block-section.css");
+@import url("_request-section.css");
+@import url("_cta-module.css");
+@import url("_signup-module.css");
+
+.repeater-section{background-color: var(--light-blue);}
+.repeater-section.row-reverse{background-color: inherit;}
+.repeater-section.row-reverse .repeater-list{flex-direction: row-reverse; }
+
+.default-banner-main {align-items: center; min-height: 600px}
+.default-banner-main .default-banner-text {max-width: 535px; padding-top: 40px;}
+.default-banner-main .default-banner-text p {font-size: 1.25rem; font-weight: 500;}
+.banner-bg:after{left: 0; top: 0; width: 100%; position: absolute;opacity: 0.6; z-index: 1; height: 100%; display: block; content: ""; }
