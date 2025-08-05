@@ -1,0 +1,45 @@
+ .prod-block-main-wrap {clear: both; width: 100%; padding: 80px 0 72px; } 
+.prod-main {clear: both; width: 100%; gap:4.6875%; justify-content: space-between; padding: 0 0 80px;}
+.prod-lt {max-width:394px; width: 100%;}
+.prod-lt:only-child {max-width: 100%; flex-grow: 1;}
+.prod-lt h2 {margin: 0;}
+.prod-lt span{font-size: 1rem; font-weight: 500; color: var(--dark-50); font-family: 'Neue Haas Unica Pro', sans-serif; letter-spacing: normal;}
+
+.prod-rt {flex: 1; font-weight: 500; font-size: 1.25rem; line-height: 1.4; letter-spacing: normal;}
+.prod-rt p{font-size: 1.25rem; font-weight: 400;}
+.prod-main:only-child{padding: 0;}
+
+.prod-list{flex: 0 0 calc(25% - 24px); flex-grow: 1;}
+.prod-img{margin-bottom: 28px;}
+.prod-img img{border-radius: 20px;}
+.prod-text-blc h3{font-family: 'Neue Haas Unica Pro', sans-serif; font-size: 1.5rem; font-weight: 800; line-height: 28px; margin-bottom: 10px; }
+.prod-text-blc p{font-size: 1rem;}
+.prod-text-blc h3 a{color: var(--dark)}
+.prod-text-blc h3 a:hover{color: var(--navy)}
+
+.prod-block-row{margin-bottom: 72px; gap: 72px 30px;}
+.prod-block-row:last-child{margin-bottom: 0;}
+
+
+@media only screen and (max-width:1023px) and (min-width:768px){
+	.prod-lt {max-width:348px;}
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+    .prod-list.slick-slide{ flex: 0 0 296px; }
+    .prod-text-blc p { font-size: 1.125rem; }
+    .prod-block-section { padding: 0px 0 13px; }
+
+    .prod-block-row .slick-track{display: flex; gap: 30px}
+    .prod-block-row .slick-list{overflow: inherit;}
+    .prod-block-row{margin-bottom: 30px;}
+
+}
+
+@media only screen and (max-width: 767px) and (min-width:200px){
+	
+	.prod-main {gap:26px; padding: 30px 0;}
+	.prod-lt {max-width:100%;}
+	.prod-rt {font-size: 1rem; line-height: 1.5; font-weight: bold;}
+}
