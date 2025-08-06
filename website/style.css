@@ -385,6 +385,8 @@ body .cky-btn-revisit-wrapper {position: fixed;}
     .fluid-width {margin-bottom: 20px;}
     
     .no-banner-bg {max-height: 478px;}
+	
+	.divider-module .fluid-width-wrapper {padding: 0 30px;}
 
 }
 
