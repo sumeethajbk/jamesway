@@ -9,3 +9,21 @@
 .auth-list img{width: 67px; height: 67px;}
 .auth-info .h3{font-size: 1.125rem; font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 700; margin-bottom: 0;}
 .auth-info span{opacity: 0.5;}
+
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+.testimo-main{padding-bottom: 60px;}
+
+
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+.testimo-row .slick-track{display: flex; gap: 40px}
+.testimon-list.slick-slide { flex: 0 0 333px;  }
+/* .testimo-row .slick-list{overflow: inherit;} */
+
+
+}

@@ -12,3 +12,22 @@
 .counter-list{flex: 0 0 calc(20% - 26px); flex-grow: 1;}
 .counter-list p{font-size: 1.25rem; font-weight: 700; line-height: 1.2; margin-bottom: 22px;}
 .counter-list span{font-size: 4rem; font-weight: 900; color: var(--navy); line-height: 1.5; margin-bottom: 16px; display: block; }
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+.counter-intro { gap: 40px;}
+.counter-lt { flex: 0 0 300px; }
+.counter-rt { flex: 0 0 calc(100% - 340px); }
+.counter-list{flex: 0 0 calc(33.33% - 22px); flex-grow: inherit;}
+
+
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+.counter-intro{gap: 40px}
+.counter-lt { flex: 0 0 100% }   
+.counter-rt { flex: 0 0 100% }
+.counter-list{flex: 0 0 calc(50% - 26px);}
+
+}

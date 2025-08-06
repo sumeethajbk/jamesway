@@ -154,6 +154,7 @@ jQuery(document).ready(function () {
     }
   }
   serviceSlider();
+  
 
   jQuery(window).on('resize load', function () {
     var newScreenWidth = jQuery(window).width();
@@ -162,7 +163,49 @@ jQuery(document).ready(function () {
       serviceSlider();
     }
   });
-  /* End of Intro slider */
+  /* End of service slider */
+
+
+   /* testimo  Slider */
+  var windowWidth = jQuery(window).width();
+
+  function testimoSlider() {
+    var $testimoslide = jQuery('.testimo-row');
+    var testimolist = $testimoslide.children().length;
+    if (windowWidth <= 1023) {
+
+      $testimoslide.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 2000,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
+        draggable: true,
+        swipeToSlide: true,
+        touchThreshold: 100,
+        autoplay: false,
+        autoplaySpeed: 0,
+        adaptiveHeight: true,
+        cssEase: 'linear',
+      });
+
+    } else {
+
+    }
+  }
+  testimoSlider();
+  
+
+  jQuery(window).on('resize load', function () {
+    var newScreenWidth = jQuery(window).width();
+    if (newScreenWidth !== windowWidth) {
+      windowWidth = newScreenWidth;
+      testimoSlider();
+    }
+  });
+  /* End of testimo slider */
 
 
   /* Testimonial Slider */
