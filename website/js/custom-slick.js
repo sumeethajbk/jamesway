@@ -81,7 +81,6 @@ jQuery(document).ready(function () {
   /* End of Intro row slider */
 
 
-
   /* prod  row Slider */
   var windowWidth = jQuery(window).width();
 
@@ -123,8 +122,7 @@ jQuery(document).ready(function () {
   /* End of Intro row slider */
 
 
-
-   /* servcie  Slider */
+  /* servcie  Slider */
   var windowWidth = jQuery(window).width();
 
   function serviceSlider() {
@@ -181,5 +179,86 @@ jQuery(document).ready(function () {
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
   });
 
+  /* Logo Slider */
+  var windowWidth = jQuery(window).width();
+
+  function LogoSlider() {
+    var $logoSlider = jQuery('.logo-slider-row');
+    var logoslideCount = $logoSlider.children().length;
+    if (windowWidth >= 1024) {
+      if (logoslideCount > 3) {
+        $logoSlider.slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          speed: 5000,
+          dots: false,
+          arrows: true,
+          variableWidth: true,
+          draggable: true,
+          swipeToSlide: true,
+          touchThreshold: 100,
+          autoplay: false,
+          autoplaySpeed: 0,
+          centerMode: true,
+          centerPadding: ' 0',
+          cssEase: 'linear',
+          prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+          nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+        });
+      }
+    } else {
+      $logoSlider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 5000,
+        dots: false,
+        arrows: true,
+        variableWidth: true,
+        draggable: true,
+        swipeToSlide: true,
+        touchThreshold: 100,
+        autoplay: false,
+        autoplaySpeed: 0,
+        centerMode: true,
+        centerPadding: '0',
+        cssEase: 'linear',
+        prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+        nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+      });
+    }
+  }
+  LogoSlider();
+
+  jQuery(window).on('resize load', function () {
+    var newScreenWidth = jQuery(window).width();
+    if (newScreenWidth !== windowWidth) {
+      windowWidth = newScreenWidth;
+      LogoSlider();
+
+    }
+  });
+  /* End of logo slider */
+
+  /* Products Slider */
+  jQuery('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    infinite: true,
+    asNavFor: '.slider-nav'
+  });
+  jQuery('.slider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    vertical: true,
+    asNavFor: '.slider-for',
+    dots: false,
+    focusOnSelect: true,
+    verticalSwiping: true,
+    infinite: true,
+  });
 
 });

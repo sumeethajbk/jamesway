@@ -110,6 +110,10 @@ button, .button  {display: inline-block; font-size:1.125rem; font-weight: 700; l
 button:hover, .button:hover {color: var(--navy); background-color: var(--button-hover);}
 button:focus, .button:focus, button:active, .button:active {background-color: var(--button); color: var(--white);}
 
+.gbtn {background: var(--navy-gbtn); color: var(--white);}
+.gbtn:hover {color: var(--yellow-btn-hover); background: var(--yellow-gbtn);}
+.gbtn:active {background: var(--navy-gbtn); color: var(--white);}
+
 .yellow-btn {background: var(--yellow-btn); color: var(--yellow-btn-hover);}
 .yellow-btn:hover {background: var(--white); color: var(--yellow-btn-hover);}
 .yellow-btn:active {background: var(--yellow-btn); color: var(--yellow-btn-hover);}
