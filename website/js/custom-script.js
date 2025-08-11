@@ -101,6 +101,20 @@ jQuery(document).ready(function () {
   if (match) {
     jQuery("body").addClass(match[0]);
   }
+    
+    if (jQuery(window).width() >= 768) {
+    if (jQuery(".general-default-inner").length > 0) {
+    jQuery(window).on("scroll", function () {
+      var height = jQuery(".default-banner-section").outerHeight(true);
+      var scroll = jQuery(this).scrollTop() + 150;
+      if (scroll >= height) {
+        jQuery(".general-default-inner").addClass("active");
+      } else {
+        jQuery(".general-default-inner").removeClass("active");
+      }
+    });
+  }
+        }
 
 
 });

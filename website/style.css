@@ -182,8 +182,8 @@ body .mfp-iframe-holder button.mfp-close::before{left:0;}
 
 
 /* Cat Wrap */
-.cat-wrap {clear: both; margin: 0 0 8px 0;}
-.cat-wrap ul {margin: 0; font-size: 0; line-height: normal; display: flex; flex-wrap: wrap; gap:10px;}
+.cat-wrap {clear: both; margin: 0 0 8px 0; display: flex; flex-wrap: wrap; gap:20px; align-items: center;}
+.cat-wrap ul {margin: 0; font-size: 0; line-height: normal; display: flex; flex-wrap: wrap; gap:10px; width: fit-content;}
 .cat-wrap ul li {margin:0; display: inline-block; font-size: 0.75rem; background: var(--navy); color: var(--white); letter-spacing: 0.48px; font-weight:500; border-radius: 10px; padding: 6px 11px 6px; line-height: 1;}
 .cat-wrap ul li:before {display: none;}
 .cat-wrap ul li a {display: inline-block; color: var(--white);}
@@ -255,7 +255,7 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 
 
 /* Input */
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: bold; display: block; font-size: 0.875rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--white) !important; color: var(--dark); padding: 16px 16px 16px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 10px;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 500; display: block; font-size: 0.875rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--white) !important; color: var(--dark); padding: 16px 16px 16px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 10px;}
 body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--dark)!important; border-color: var(--white)!important;}
 .frm_forms .frm_form_fields select {color: var(--brand-green)!important;}
 
@@ -317,6 +317,36 @@ html.no-scroll {overflow:hidden;}
 
 body .cky-btn-revisit-wrapper {position: fixed;}
 
+
+/* Fixed Social Icons */
+aside.sidebar {width:56px; position:relative; text-align:center; float:right; right:0; z-index: 1;}
+.fixed-social-icons {position:absolute; top:200px; text-align:center;}
+.general-default-inner.active .fixed-social-icons {position:fixed;}
+
+.fixed-social-icons .share-text {font-size: 0.813rem; color: rgba(0, 7, 51, 0.5); line-height: 1.69; font-weight: 600; display: inline-block;}
+.sharethis-inline-share-buttons .st-btn {width:56px; height: 56px!important; color: var(--navy); line-height: 38px!important;
+position: relative; z-index: 1; text-decoration: none; border-radius:10px!important; background-color: var(--light-blue)!important; display: inline-block!important; text-align: center!important; cursor: pointer; min-width: inherit!important; padding: 0 !important; margin: 0!important;}
+.sharethis-inline-share-buttons .st-btn.st-first {margin-left: 0!important;}
+.sharethis-inline-share-buttons {font-size: 0; display:flex!important; z-index: 1 !important; justify-content:center; flex-direction: column; gap:1px;}
+.sharethis-inline-share-buttons .st-btn:after {font-family: "Font Awesome 6 Brands"; font-weight: 400; margin:0 auto; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; vertical-align: middle; display: inline-block; font-size: 24px; line-height: 54px;}
+.sharethis-inline-share-buttons .st-btn[data-network=twitter]:after {content: "\f099"; }
+.sharethis-inline-share-buttons .st-btn[data-network=facebook]:after {content: "\f39e";}
+.sharethis-inline-share-buttons .st-btn[data-network=linkedin]:after {content: "\f0e1";}
+.sharethis-inline-share-buttons .st-btn[data-network=email]:after {content: "\f0e0"; font-family: "Font Awesome 6 Pro"; font-weight: 900;}
+.sharethis-inline-share-buttons .st-btn[data-network=sharethis]:after {content: "\f1e0"; font-family: "Font Awesome 6 Pro"; font-weight: 900; font-size: 1.25rem;}
+
+.sharethis-inline-share-buttons .st-btn[data-network=sharethis] {background: var(--navy)!important; color: var(--light-grey); order: 1;}
+.sharethis-inline-share-buttons .st-btn[data-network=facebook] {order: 2;}
+.sharethis-inline-share-buttons .st-btn[data-network=twitter] {order: 3;}
+.sharethis-inline-share-buttons .st-btn[data-network=linkedin] {order: 4;}
+.sharethis-inline-share-buttons .st-btn[data-network=email] {order: 5;}
+
+
+.sharethis-inline-share-buttons .st-btn:hover {color: var(--white); background: var(--navy)!important; opacity: 1 !important; top: 0!important;}
+.sharethis-inline-share-buttons .st-btn span, .sharethis-inline-share-buttons .st-btn img {display: none!important;}
+.at4-visually-hidden {display: none;}
+
+
 /*-- media css starts here --*/
 @media only screen and (min-width:1024px) {
     .hide-in-desktop {display:none;}
@@ -330,6 +360,8 @@ body .cky-btn-revisit-wrapper {position: fixed;}
 
 @media only screen and (max-width: 1023px) and (min-width:200px) {
     #mainContent {padding:76px 0 0 0;}
+    .fixed-social-icons {top: inherit; bottom: 0; width: 100%; left: 0; background: var(--white-75); height: 86px; padding: 15px; position: fixed;}
+    .sharethis-inline-share-buttons {justify-content: center; flex-direction: row; gap: 10px;}
 }
 
 
