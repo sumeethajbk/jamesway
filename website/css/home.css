@@ -1,17 +1,19 @@
 @import url("_default-banner.css");
-@import url("_intro-module.css");
+@import url("_logo-slider.css");
+@import url("_location-module.css");
+@import url("_products-module.css");
 @import url("_features-module.css");
 @import url("_repeater-section.css");
 @import url("_testimonial-module.css");
-@import url("_cta-module.css");
-@import url("_micro-cta-module.css");
-@import url("_block-module.css");
-@import url("_accordion.css");
 @import url("_featured-res-module.css");
-@import url("_single-testimonial-module.css");
 @import url("_signup-module.css");
 
-.default-banner-main {min-height: 871px;}
+.default-banner-main {min-height: 870px; padding: 165px 0;}
+.default-banner-main .default-banner-text {max-width: 627px;}
+.default-banner-main .default-banner-text p {font-weight: 400; margin-bottom: 23px;}
+
+.logo-slider-module {top: -150px; margin-bottom: -159px;}
+
 
 /*-- media css starts here --*/
 @media only screen and (max-width:1023px) and (min-width:768px) {

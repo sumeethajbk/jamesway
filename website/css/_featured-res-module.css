@@ -1,4 +1,4 @@
-.featured-res-module {clear: both; width: 100%; position: relative; z-index: 1; padding:60px 0 80px;}
+.featured-res-module {clear: both; width: 100%; position: relative; z-index: 1; padding:60px 0 80px; background: var(--white);}
 .featured-res-module .heading h2 {color: var(--black); margin: 0;}
 .featured-res-wrap {clear: both; width: 100%; display: flex; flex-wrap: wrap; gap:2.5%;}
 

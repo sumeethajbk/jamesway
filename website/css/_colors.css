@@ -32,6 +32,11 @@
 	--yellow-btn:#ffb81c;
 	--yellow-btn-hover:#002677;
     --pinkish: #f9f3ef;
+    --navy-gbtn: linear-gradient(90deg, #00277C 0%, #00164D 100%);
+    --sliderbg:#f2f1f0;
+    --sliderthumb:linear-gradient(120deg, #ffffff 8%, #f6efe9 93%);
+    --sliderthumbcur:rgba(37, 40, 42, 0.6);
+    
     
 	
 }
