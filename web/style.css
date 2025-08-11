@@ -43,6 +43,8 @@ body {font-family: "Inter", sans-serif; color:var(--body-text); font-size:1.125r
   55%  { opacity: 1; transform: translate(0, 0) scale(1); }
 }
 
+
+
 @keyframes rotateInfinite {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(-360deg);}
