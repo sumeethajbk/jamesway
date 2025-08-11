@@ -14,9 +14,22 @@
 	.features-grid {flex: 0 0 calc(50% - 16px);}
 }
 
+
+@media only screen and (max-width:1023px) and (min-width: 200px) {
+.features-inner .slick-track { display: flex !important; gap: 30px;}
+.services-block-thumb img {width: fit-content;}
+.features-grid.slick-slide { flex: 0 0 296px; }
+.features-inner .slick-list{overflow: inherit;}
+
+
+}
+
 @media only screen and (max-width:767px) and (min-width: 200px) {
     .features-inner{display: flex; gap: 35px; flex-direction: column; padding: 40px 0;}
     .featues-icon {margin-bottom: 22px;}
     .features-grid .h4 { margin-bottom: 8px; font-size: 1.5rem;}
+
+    /* .testimo-row .slick-track{display: flex; gap: 40px} */
+.features-grid.slick-slide { flex: 0 0 333px;  }
 
 }

@@ -1,0 +1,47 @@
+.open-position-section{padding: 80px 0 80px; background-color: var(--brandbook-gray-light)}
+.open-position-main{gap: 80px;}
+.open-position-text{flex: 0 0 352px; display: flex; flex-direction: column; justify-content: space-between;}
+.open-position-text span{letter-spacing: normal;}
+.open-position-text .h4{font-weight: 800;}
+.open-position-text p{font-size: 16px; font-weight: 400;}
+.open-position-btns a{background-color: transparent; color: var(--navy); border:2px solid var(--navy); padding: 8px 12px;}
+.open-position-left { flex: 53%; }
+.open-position-left .h6{margin-bottom: 0; font-weight: 800;}
+.open-position-rt.flex.relative{flex: 1;}
+.open-position-list{margin-bottom: 24px; background: var(--white); justify-content: space-between; border-radius: 10px; padding: 16px; gap: 16px }
+.open-position-list:last-child{margin-bottom: 0;}
+.open-position-btn{ justify-content: flex-end; display: flex; }
+.open-position-list > span{font-size: 12px; font-weight: 400;color: var(--dark)}
+.open-position-btn a{min-width: inherit; padding: 8px 20px; font-size: 1.125rem; font-weight: 700;}
+.open-position-list:nth-child(1),.open-position-list:nth-child(5){opacity: 1;}
+.open-position-list:nth-child(2),.open-position-list:nth-child(6){background-color: var(--white-75);}
+.open-position-list:nth-child(3),.open-position-list:nth-child(7){background-color: var(--white-50);}
+.open-position-list:nth-child(4),.open-position-list:nth-child(8){background-color: var(--white-25);}
+.open-position-title .h6{font-size: 1.125rem;}
+.open-position-text:only-child{flex-grow: 1}
+
+
+
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+.open-position-main { gap: 40px; }
+.open-position-left { flex: 30%;}
+
+
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+.open-position-main{display: block;}
+.open-position-text{margin-bottom: 50px;}
+
+
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    .open-position-list{display: block;}
+    .open-position-btn{justify-content: flex-start;}
+    .open-position-left{margin-bottom: 16px;}
+    .open-position-list > span{margin-bottom: 16px; display: block;}
+
+
+}
