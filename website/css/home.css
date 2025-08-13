@@ -15,10 +15,48 @@
 .logo-slider-module {top: -150px; margin-bottom: -159px;}
 
 
-/*-- media css starts here --*/
-@media only screen and (max-width:1023px) and (min-width:768px) {
+.stats-module {clear: both; width: 100%; background-color: var(--brandbook-gray-light); padding: 56px 0 72px 0; margin-bottom: 10px;}
+.stats-intro {clear: both; width: 100%; gap:4.6875%; justify-content: space-between; align-items: center; margin: 0 0 38px 0;}
+.stats-intro:only-child {margin: 0;}
+.stats-lt {max-width:394px; width: 100%;}
+.stats-lt:only-child {max-width: 100%; flex-grow: 1;}
+.stats-lt h2 {margin: 0; color: var(--black);}
+.stats-rt {flex: 1; font-weight: 500; font-size: 1.25rem; line-height: 1.4; letter-spacing: normal;}
+
+.stats-slider {gap:34px;}
+.stats-slider .slick-track {display: flex; gap:34px;}
+.stats-slider .slick-list {overflow: visible;}
+.stats-slider .stats-slide {opacity: 0.3;}
+.stats-slider .stats-slide.slick-slide.slick-active {opacity: 1;}
+.stats-slider .slick-arrow.slick-prev {left: -25px;}
+.stats-slide-grid {width:460px; display: flex; align-items: center; flex-wrap: wrap; gap:30px;}
+.stats-slide-grid .stats-thumb {width: 210px;}
+.stats-slide-grid .stats-thumb img {border-radius: 20px; border: solid 3px var(--white);}
+.stats-slide-grid .stats-txt {flex: 1;}
+.stats-slide-grid .stats-txt .counter-txt {font-size: 1.25rem; line-height: 1.2; font-weight: 700; display: inline-block;}
+.stats-slide-grid .stats-txt .number {font-size: 0; margin: 0 0 12px 0;}
+.stats-slide-grid .stats-txt .number span {font-size: 4rem; font-weight: 900; line-height: 1.5; display: inline-block;}
+
+
+.testimonial-module ~ .repeater-section .repeater-main {padding: 0 0 76px 0;}
+.repeater-section ~ .featured-res-module {padding: 0 0 93px;}
+.featured-res-top-rt-inner .featured-res-post {background: var(--postbg);}
+
+
+/* Responsive */
+@media only screen and (min-width:1024px) {
+
 }
 
-@media only screen and (max-width:767px) and (min-width:200px) {
-	
+@media only screen and (max-width:1023px) and (min-width:768px){
+	.stats-lt {max-width:348px;}
+}
+
+@media only screen and (max-width: 767px) and (min-width:200px){
+    .default-banner-main {min-height: 653px; padding: 50px 0;}
+    .logo-slider-module {top: 0; margin-bottom: 0;}
+
+	.stats-intro {gap:26px;}
+	.stats-lt {max-width:100%;}
+	.stats-rt {font-size: 1rem; line-height: 1.5; font-weight: bold;}
 }
