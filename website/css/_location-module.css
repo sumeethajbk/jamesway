@@ -1,5 +1,6 @@
 .locations-module {position: relative; clear: both; width: 100%; min-height: 541px; padding:111px 0 173px;}
-.locations-module .background-bg img {object-fit: contain; object-position: center right;}
+.locations-module .container {position: relative;}
+.locations-module .background-bg {width: 1556px; height: 739px; left: inherit; right:-394px; top:-137px;}
 .locations-mwrap {display: flex; align-items: center; width: 100%;}
 .locations-txt {max-width: 394px; width:100%;}
 .locations-txt h2 {margin-bottom: 24px;}
@@ -8,9 +9,9 @@
 .phone-img {position: absolute; width: 241px; height: 178px; right:-61px; top: 0; display: block;}
 
 /*-- media css starts here --*/
-@media only screen and (max-width:1023px) and (min-width:768px) {
+@media only screen and (max-width:1260px) {
+    .locations-module .background-bg img {object-fit: cover; object-position: 0 0;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-	
 }

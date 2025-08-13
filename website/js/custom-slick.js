@@ -152,7 +152,7 @@ jQuery(document).ready(function () {
     }
   }
   serviceSlider();
-  
+
 
   jQuery(window).on('resize load', function () {
     var newScreenWidth = jQuery(window).width();
@@ -164,7 +164,7 @@ jQuery(document).ready(function () {
   /* End of service slider */
 
 
-   /* testimo  Slider */
+  /* testimo  Slider */
   var windowWidth = jQuery(window).width();
 
   function testimoSlider() {
@@ -194,7 +194,7 @@ jQuery(document).ready(function () {
     }
   }
   testimoSlider();
-  
+
 
   jQuery(window).on('resize load', function () {
     var newScreenWidth = jQuery(window).width();
@@ -360,13 +360,13 @@ jQuery(document).ready(function () {
   function LogoSlider() {
     var $logoSlider = jQuery('.logo-slider-row');
     var logoslideCount = $logoSlider.children().length;
-    if (windowWidth >= 1024) {
+    if (windowWidth >= 768) {
       if (logoslideCount > 3) {
         $logoSlider.slick({
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          speed: 5000,
+          speed: 1000,
           dots: false,
           arrows: true,
           variableWidth: true,
@@ -376,33 +376,27 @@ jQuery(document).ready(function () {
           autoplay: false,
           autoplaySpeed: 0,
           centerMode: true,
-          centerPadding: ' 0',
+          centerPadding: '0',
           cssEase: 'linear',
           prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
           nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+          responsive: [{
+              breakpoint: 1290,
+              settings: {
+                slidesToShow: 4,
+                variableWidth: false,
+              }
+            },{
+                       breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                variableWidth: false,
+              }
+            }
+          ]
         });
       }
-    } else {
-      $logoSlider.slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        speed: 5000,
-        dots: false,
-        arrows: true,
-        variableWidth: true,
-        draggable: true,
-        swipeToSlide: true,
-        touchThreshold: 100,
-        autoplay: false,
-        autoplaySpeed: 0,
-        centerMode: true,
-        centerPadding: '0',
-        cssEase: 'linear',
-        prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
-        nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
-      });
-    }
+    } 
   }
   LogoSlider();
 
@@ -417,23 +411,100 @@ jQuery(document).ready(function () {
   /* End of logo slider */
 
   /* Products Slider */
+  jQuery('.slider-nav').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: false,
+    speed: 1000,
+    arrows: false,
+    vertical: true,
+    verticalSwiping: true,
+    swipeToSlide: true,
+    focusOnSelect: true,
+    asNavFor: '.slider-for',
+  }).on('setPosition', function () {
+    jQuery('.slider-nav .slick-list').css('height', '1020px');
+  });
   jQuery('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    speed: 1000,
     fade: true,
-    infinite: true,
-    asNavFor: '.slider-nav'
-  });
-  jQuery('.slider-nav').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    vertical: true,
-    asNavFor: '.slider-for',
-    dots: false,
     focusOnSelect: true,
-    verticalSwiping: true,
-    infinite: true,
+    infinite: false,
+    asNavFor: '.slider-nav',
+    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          arrows: true,
+          fade: false,
+          variableWidth: true,
+          adaptiveHeight: true,
+        }
+      },
+      {
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          arrows: true,
+          fade: false,
+          variableWidth: true,
+        }
+      }
+    ]
+
   });
 
+
 });
+
+
+function toggleSlider() {
+  var slider = jQuery('.results-mod-lists');
+  if (slider.hasClass('slick-initialized')) slider.slick('unslick');
+  if (slider.children().length > 2 && jQuery(window).width() <= 1023) {
+    slider.slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      speed: 1000,
+      variableWidth: true,
+      draggable: true,
+      swipeToSlide: true,
+      touchThreshold: 100,
+      autoplay: false,
+      autoplaySpeed: 0,
+      adaptiveHeight: true
+    });
+  }
+}
+jQuery(toggleSlider);
+jQuery(window).on('resize', toggleSlider);
+
+/* Stats Slider */
+function statsSlider() {
+  var s = jQuery('.stats-slider');
+  if (s.hasClass('slick-initialized')) s.slick('unslick');
+  if (s.children().length > 2) s.slick({
+    slidesToShow: 2,
+    dots: false,
+    arrows: true,
+    speed: 1000,
+    variableWidth: true,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
+    adaptiveHeight: true,
+    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>'
+  });
+}
+jQuery(statsSlider);
+jQuery(window).on('resize', statsSlider);

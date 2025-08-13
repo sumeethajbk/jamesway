@@ -1,0 +1,55 @@
+@import url("default-page.css");
+
+.default-banner-main {padding: 56px 0;}
+.default-banner-main .default-banner-text {max-width:600px; color: var(--dark);}
+.default-banner-main .default-banner-text .optional-text {color: var(--dark); opacity: 0.5; font-weight: 700; margin: 0 0 20px 0;}
+.default-banner-main .default-banner-text h1 {color: var(--dark);}
+.default-banner-main .default-banner-text p {color: var(--dark); font-weight: normal; max-width: 460px;}
+
+/* Results Module */
+.results-module {padding: 80px 0 0; clear: both; width: 100%;}
+.results-mod-wrapper {clear: both; width: 100%; background: var(--light-blue); padding:58px 80px 50px; border-radius: 20px; display: flex; flex-wrap: wrap; gap: 52px;}
+.results-mod-wrap {clear: both; width: 100%; gap:24.6%; justify-content: space-between;}
+.results-mod-lt {max-width:394px; width: 100%; padding: 22px 0 0 0;}
+.results-mod-lt:only-child {max-width: 100%; flex-grow: 1;}
+.results-mod-lt h2 {margin: 0;}
+.results-mod-rt {flex: 1; font-weight: normal; font-size: 1.25rem; line-height: 1.4; letter-spacing: normal;}
+
+
+.results-mod-lists {gap: 32px; margin: 0 auto;}
+.results-mod-grid {flex: 0 0 calc(25% - 30px); flex-grow: 1;}
+.results-mod-grid .h4 {margin-bottom: 15px; font-weight: 700;}
+.results-mod-grid p {font-size: 1rem; line-height: 1.5;}
+
+.results-icon {margin-bottom: 23px; position: relative; width: 100%; line-height: 68px; height:68px;}
+.results-icon figure img{width: auto; height: auto; max-height:68px; mix-blend-mode: multiply;}
+
+    .general-default-container .default-lt > h3 {padding: 23px 0 0 0;}
+.general-default-container .default-lt > h4 {padding:36px 0 0 0;}
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width:1023px) and (min-width:200px) {
+    .results-module {padding:29px 0 28px 0;}
+    .results-mod-wrapper {padding:26px 30px 28px; overflow: hidden; gap: 29px;}
+    .results-mod-wrap {gap:30px;}
+    .results-mod-lt h2 {font-size: 3rem; line-height: 1;}
+    .results-mod-lt {padding: 0;}
+    .results-mod-rt {padding-right:20px;}
+    .results-mod-grid  {width: 256px; flex: inherit; height: inherit;}
+    .results-mod-lists .slick-track {display: flex; gap:32px;}
+    .results-mod-lists .slick-list {overflow: visible;}    
+    .results-mod-lists ul.slick-dots {padding-top: 28px;}
+    .results-icon {margin-bottom: 22px;}
+    
+
+}
+
+@media only screen and (max-width:1023px) and (min-width: 768px) {
+    
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .default-banner-main {min-height: 576px; padding: 116px 0;}
+    .default-banner-main .default-banner-text p {padding: 0;}
+}
