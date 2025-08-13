@@ -1,5 +1,7 @@
 @import url("_default-banner.css");
 @import url("_contact-form.css");
+@import url("_open-position-section.css");
+@import url("_default-page.css");
 
 
 
@@ -16,11 +18,15 @@
 .career-post-lt h3{font-size: 1.5rem;}
 .career-post-lt ul{margin: 0 0 20px 26px;}
 
+.career-post-lt p:first-child{font-size: 1.5rem; font-weight: 400; line-height: 32px;}
+
 .career-post-way{background-color: var(--brandbook-gray-light); padding: 24px 24px 24px; border-radius: 20px; margin-bottom: 32px;}
 .career-post-head h3{font-weight: 800; margin-bottom: 8px;}
 .row-way{gap: 19px; margin-bottom: 7px; }
 .row-way .label{font-size: 1rem; font-weight: 700; flex: 0 0 85px;}
 .row-way .value{font-size: 1rem;}
+
+
 
 .form-sub-main{background-color: var(--light-blue); padding: 24px 24px 24px; border-radius: 20px; margin-bottom: 32px;}
 .form-sub-main h3{font-size: 1.5rem; font-weight: 800; margin-bottom: 40px;}
@@ -31,12 +37,7 @@
 .body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {width: 100%;}
 .body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button { font-size: 1rem !important; font-weight: 500!important;padding: 12px 16px!important; }
 
-.body .frm_form_field.form-field.frm_required_field.frm_top_container input[type="file"]::after{content: "\f019";
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  width: 20px;}
+.body .frm_form_field.form-field.frm_required_field.frm_top_container input[type="file"]::after{content: "\f019"; position: absolute; right: 0; top: 0; display: block; width: 20px;}
 
 .default-banner-main .default-banner-text .optional-text {font-weight: 500;}
 
@@ -45,7 +46,12 @@
 .readmore.goback::after { content: "\f060"; background: var(--navy); width: 40px; height: 40px; border-radius: 20px; color: var(--white); display: flex; justify-content: center; align-items: center;  line-height: 1;}
 .readmore.goback:hover::after{background-color: var(--dark);}
 
-
+.fixed-social-icons {position: relative; top: 0}
+.sharethis-inline-share-buttons {flex-direction: row!important;}
+#st-1 .st-btn[data-network="sharethis"] { width: 107px; height: 56px !important; color: var(--white);}
+.sharethis-inline-share-buttons .st-btn {background-color: transparent!important;}
+/* .sharethis-inline-share-buttons .st-btn:hover { color: var(--white-50) !important;} */
+#st-1 .st-btn[data-network="sharethis"]:hover {color: var(--white-50)!important;}
 /*-- media css starts here --*/
 @media only screen and (max-width:1299px) and (min-width:1150px) {
       .career-post-way{gap: 80px}
@@ -71,8 +77,22 @@
     .career-post-lt{margin-bottom: 40px;}
     .career-post-way{width: fit-content}
     .form-sub-main{max-width: 335px;}
+   .fixed-social-icons {padding: 0;}
+    .sharethis-inline-share-buttons {
+    justify-content: inherit; gap: 0;}
+
+}
 
 
+@media only screen and (max-width:767px) and (min-width:200px) {
+  .career-post-main { padding: 54px 0 65px; display: block;}
+.default-banner-main .default-banner-text p {padding-right: 0;}
+.default-banner-main {padding: 56px 0 85px;}
+.career-post-lt p:first-child {margin-bottom: 36px;}
+.career-post-lt{margin-bottom: 50px;}
+.form-sub-main span {font-size: 1.125rem;}
+.fixed-social-icons {padding: 0;}
+.sharethis-inline-share-buttons { justify-content: inherit;}
 
 }
 
