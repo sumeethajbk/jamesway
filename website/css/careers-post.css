@@ -1,0 +1,81 @@
+@import url("_default-banner.css");
+@import url("_contact-form.css");
+
+
+
+.default-banner-main .default-banner-text h1 { color: inherit;}
+.default-banner-main .default-banner-text p {color: inherit; font-size: 1.25rem; font-weight: 400;}
+.default-banner-main .default-banner-text span{color: var(--dark-50)!important; font-weight: 700 font;}
+.default-banner-main {align-items: center;}
+
+
+.career-post{clear: both; position: relative; width: 100%; display: block;}
+.career-post-main { gap: 104px; padding: 64px 0 80px;}
+.career-post-lt{flex: 1;}
+.career-post-rt{flex: 0 0 335px}
+.career-post-lt h3{font-size: 1.5rem;}
+.career-post-lt ul{margin: 0 0 20px 26px;}
+
+.career-post-way{background-color: var(--brandbook-gray-light); padding: 24px 24px 24px; border-radius: 20px; margin-bottom: 32px;}
+.career-post-head h3{font-weight: 800; margin-bottom: 8px;}
+.row-way{gap: 19px; margin-bottom: 7px; }
+.row-way .label{font-size: 1rem; font-weight: 700; flex: 0 0 85px;}
+.row-way .value{font-size: 1rem;}
+
+.form-sub-main{background-color: var(--light-blue); padding: 24px 24px 24px; border-radius: 20px; margin-bottom: 32px;}
+.form-sub-main h3{font-size: 1.5rem; font-weight: 800; margin-bottom: 40px;}
+.form-sub-main span{font-size: 1rem; line-height: 1.5; color: var(--dark-50); font-weight: 500; letter-spacing: normal; margin: 0 0 8px 0;}
+
+.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label {display: none;}
+
+.body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {width: 100%;}
+.body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button { font-size: 1rem !important; font-weight: 500!important;padding: 12px 16px!important; }
+
+.body .frm_form_field.form-field.frm_required_field.frm_top_container input[type="file"]::after{content: "\f019";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 20px;}
+
+.default-banner-main .default-banner-text .optional-text {font-weight: 500;}
+
+.career-post-lt .back{padding-top: 18px;}
+.readmore.goback { flex-direction: row-reverse; }
+.readmore.goback::after { content: "\f060"; background: var(--navy); width: 40px; height: 40px; border-radius: 20px; color: var(--white); display: flex; justify-content: center; align-items: center;  line-height: 1;}
+.readmore.goback:hover::after{background-color: var(--dark);}
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width:1299px) and (min-width:1150px) {
+      .career-post-way{gap: 80px}
+   
+
+}
+
+
+@media only screen and (max-width:1149px) and (min-width:1024px) {
+    .career-post-main { gap: 64px;}
+
+    .career-post-way {padding: 22px 22px 22px;}
+    .row-way .label {flex: 0 0 85px;}
+
+
+
+}
+
+
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .career-post-main {display: block;}
+    .career-post-lt{margin-bottom: 40px;}
+    .career-post-way{width: fit-content}
+    .form-sub-main{max-width: 335px;}
+
+
+
+}
+
+
+
+

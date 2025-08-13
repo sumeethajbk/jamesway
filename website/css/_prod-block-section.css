@@ -22,6 +22,7 @@
 
 
 @media only screen and (max-width:1023px) and (min-width:768px){
+    .prod-block-main-wrap {padding: 80px 0 0px;}
 	.prod-lt {max-width:348px;}
 }
 
@@ -38,8 +39,12 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width:200px){
-	
-	.prod-main {gap:26px; padding: 30px 0;}
+	.prod-block-section {padding: 0;}
+    .prod-block-main-wrap {padding: 0;}
+	.prod-main {gap:26px; padding: 40px 0;}
 	.prod-lt {max-width:100%;}
 	.prod-rt {font-size: 1rem; line-height: 1.5; font-weight: bold;}
+    .prod-lt h2 {font-size: 2rem; font-weight: 800;}
+    .prod-rt p { font-size: 1rem; font-weight: 500;}
+    .prod-block-row ul.slick-dots {padding-top: 30px;}
 }

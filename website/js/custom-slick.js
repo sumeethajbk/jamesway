@@ -206,6 +206,95 @@ jQuery(document).ready(function () {
   /* End of testimo slider */
 
 
+   /* feature  Slider */
+  var windowWidth = jQuery(window).width();
+
+  function featureSlider() {
+    var $featureslide = jQuery('.features-inner');
+    var featurelist = $featureslide.children().length;
+    if (windowWidth <= 1023) {
+
+      $featureslide.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 2000,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
+        draggable: true,
+        swipeToSlide: true,
+        touchThreshold: 100,
+        autoplay: false,
+        autoplaySpeed: 0,
+        adaptiveHeight: true,
+        cssEase: 'linear',
+      });
+
+    } else {
+
+    }
+  }
+  featureSlider();
+  
+
+  jQuery(window).on('resize load', function () {
+    var newScreenWidth = jQuery(window).width();
+    if (newScreenWidth !== windowWidth) {
+      windowWidth = newScreenWidth;
+      testimoSlider();
+    }
+  });
+  /* End of features slider */
+
+
+
+  /* people  Slider */
+  var windowWidth = jQuery(window).width();
+
+  function peopleslider() {
+    var $peopleslide = jQuery('.people-inner');
+    var peoplelist = $peopleslide.children().length;
+    if (windowWidth <= 1023) {
+
+      $peopleslide.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 2000,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
+        draggable: true,
+        swipeToSlide: true,
+        touchThreshold: 100,
+        autoplay: false,
+        autoplaySpeed: 0,
+        adaptiveHeight: true,
+        cssEase: 'linear',
+      });
+
+    } else {
+
+    }
+  }
+  peopleslider();
+  
+
+  jQuery(window).on('resize load', function () {
+    var newScreenWidth = jQuery(window).width();
+    if (newScreenWidth !== windowWidth) {
+      windowWidth = newScreenWidth;
+      peopleslider();
+    }
+  });
+  /* End of people slider */
+
+
+
+  
+
+
   /* Testimonial Slider */
   jQuery(".testimonial-slider").slick({
     slidesToShow: 1,

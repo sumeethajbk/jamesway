@@ -15,3 +15,13 @@
 .default-banner-main .default-banner-text {max-width: 535px; padding-top: 40px;}
 .default-banner-main .default-banner-text p {font-size: 1.25rem; font-weight: 500;}
 .banner-bg:after{left: 0; top: 0; width: 100%; position: absolute;opacity: 0.6; z-index: 1; height: 100%; display: block; content: ""; }
+
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+.default-banner-main { align-items: flex-end; min-height: 652px;}
+
+
+
+}

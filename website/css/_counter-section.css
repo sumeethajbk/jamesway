@@ -25,9 +25,11 @@
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-.counter-intro{gap: 40px}
+.counter-intro{gap: 50px; margin-bottom: 17px;}
 .counter-lt { flex: 0 0 100% }   
 .counter-rt { flex: 0 0 100% }
-.counter-list{flex: 0 0 calc(50% - 26px);}
+.counter-list{flex: 0 0 calc(50% - 16px);}
 
+.counter-list span { font-size: 2.25rem; margin-bottom: 6px;}
+.counter-list p { font-size: 0.875rem; margin-bottom: 0;}
 }
