@@ -1,7 +1,7 @@
 .logo-slider-module {position:relative; z-index: 1; clear: both; width: 100%;}
 .logo-slider-main {background-image: linear-gradient(to right, var(--white), var(--brandbook-gray-light)); clear: both; width: 100%; text-align: center; padding:29px 48px 59px; border-radius: 30px;}
 .logo-slider-main h2 {color: var(--black); margin-bottom: 43px;}
-.logo-slider-row {display: flex; flex-wrap: wrap; justify-content: center; gap:30px;}
+.logo-slider-row {display: flex; flex-wrap: wrap; justify-content: space-around; gap:37px 49px; align-items: center;}
 .logo-slider-row .slick-list {width: calc(100% - 110px); margin: 0 auto;}
 .logo-slider-row .slick-track{display: flex; align-items: center; gap:50px;}
 .logo-slider {margin: 0 auto;}
@@ -14,7 +14,14 @@
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-.logo-slider-module {background-image: linear-gradient(to right, var(--white), var(--brandbook-gray-light));}
-.logo-slider-main {background-image: none; padding: 26px 0;}
-    .logo-slider-main h2 {font-size: 2rem; line-height: 0.94; text-align: left; font-weight: 800;}
+    .logo-slider-module {background-image: linear-gradient(to right, var(--white), var(--brandbook-gray-light));}
+    .logo-slider-main {background-image: none; padding: 26px 0 41px;}
+    .logo-slider-main h2 {font-size: 2rem; line-height: 0.94; text-align: left; font-weight: 800; margin-bottom: 30.8px;}
+    .logo-slider-row {width:87.589%; margin: 0 auto;}
+    .logo-img {display: inline-block; max-width: 121px; width: 100%;}
+    .logo-img img {max-height: 47px;  max-width: 121px;}
+}
+
+@media only screen and (max-width:392px) and (min-width:200px) {
+    .logo-slider-row {gap:37px 30px;}   
 }
