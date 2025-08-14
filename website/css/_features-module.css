@@ -31,15 +31,26 @@
 
 
 .features-three-txtwrp {position: relative;}
+/*
 .features-three-txtwrp:before {content: ""; background: var(--yellow); height:1px; width: 85px; position: absolute; top: 0; left: 0;}
 .features-three-txtwrp:after {content: ""; background: var(--yellow); height:1px; width: 85px; position: absolute; bottom: 0; left: 0;}
-.features-three-cnt {border-left: 1px solid var(--yellow);}
+*/
+
+.dots {position: absolute; width: 85px; top: 0; left: 0; height: 1px; background: var(--yellow);}
+.dots:before {content: ""; position: absolute; left:-1px; top:-1px; background: var(--yellow); width: 3px; height:3px; display: block;}
+.dots:after {content: ""; position: absolute; right:-1px; top:-1px; background: var(--yellow); width: 3px; height:3px; display: block;}
+.dots.bottom {bottom: 0; top: inherit;}
+
+.features-three-cnt {border-left: 1px solid var(--yellow); position: relative;}
+.features-three-cnt:before {content: ""; position: absolute; left:-1px; top:-1px; background: var(--yellow); width: 3px; height:3px; display: block;}
+.features-three-cnt:after {content: ""; position: absolute; right:-1px; top:-1px; background: var(--yellow); width: 3px; height:3px; display: block;}
+
 .fthree-top {width: 100%; clear: both; padding: 25px;}
 .fthree-no {width: 100%; clear: both; font-size: 5.7rem; color: var(--navy); font-weight: 900; line-height:0.81;}
 .fthree-notxt {width: 100%; clear: both;}
 .fthree-notxt p {color: var(--navy); font-weight: 700; font-size: 1rem; line-height: 1;}
 
-.fthree-btm {width: 100%; clear: both; padding: 25px;}
+.fthree-btm {width: 100%; clear: both; padding: 25px; position: relative;}
 .fthree-btm p {color: var(--navy); font-weight: 400; font-size:0.875rem; line-height: 1.2;}
 
 
