@@ -42,7 +42,7 @@
 	.featured-res-module {padding: 30px 0;}
 	.featured-res-module .heading {padding: 0 0 15px;}
 	.featured-res-module .heading h2 {font-size: 2rem;}
-	.featured-res-txt {padding: 18px;}
+	.featured-res-txt {padding: 18px; height: 100%;}
 	.featured-res-module h2 {font-size: 1.75rem; margin-bottom: 0;}
 	.featured-res-wrap {gap:20px; margin: 0 0 20px 0;}
 	.featured-res-top-lt {min-height: 225px;}

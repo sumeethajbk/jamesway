@@ -197,7 +197,7 @@ body .mfp-iframe-holder button.mfp-close::before{left:0;}
 .slick-arrow.slick-next {right: 0; left: auto;}
 .slick-arrow.slick-disabled {pointer-events:none; opacity: 0.8;}
 
-.slick-arrow span {position: relative; display: inline-block; vertical-align: middle; line-height: 20px;}
+.slick-arrow span {position: relative; display: flex; vertical-align: middle; line-height: 20px; width: 28px; height: 28px; align-items: center; justify-content: center;}
 .slick-arrow span i {font-size:20px; line-height:20px; position: relative; display: inline-block; vertical-align: middle;}
 
 ul.slick-dots {margin:0; padding-top: 52px; display:flex; justify-content:center; flex-wrap:wrap; width: 100%;}
@@ -255,7 +255,7 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 
 
 /* Input */
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 500; display: block; font-size: 0.875rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--white) !important; color: var(--dark); padding: 16px 16px 16px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 10px;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: 'Neue Haas Unica Pro', sans-serif; font-weight: 500; display: block; font-size: 0.875rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--white) !important; color: var(--dark); padding: 16px 16px 16px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 10px; border: none;}
 body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--dark)!important; border-color: var(--white)!important;}
 .frm_forms .frm_form_fields select {color: var(--brand-green)!important;}
 

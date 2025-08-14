@@ -52,6 +52,11 @@
 .sharethis-inline-share-buttons .st-btn {background-color: transparent!important;}
 /* .sharethis-inline-share-buttons .st-btn:hover { color: var(--white-50) !important;} */
 #st-1 .st-btn[data-network="sharethis"]:hover {color: var(--white-50)!important;}
+
+.frm_dropzone.frm_single_upload.frm_clearfix.dz-clickable .frm_upload_text { display: none; }
+.frm_dropzone.frm_single_upload.frm_clearfix.dz-clickable  .dz-message {border: none;}
+.frm_dropzone.frm_single_upload.frm_clearfix.dz-clickable  .frm_small_text{display: none;}
+
 /*-- media css starts here --*/
 @media only screen and (max-width:1299px) and (min-width:1150px) {
       .career-post-way{gap: 80px}
