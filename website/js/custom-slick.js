@@ -206,11 +206,11 @@ jQuery(document).ready(function () {
   /* End of testimo slider */
 
 
-   /* feature  Slider */
+  /* feature  Slider */
   var windowWidth = jQuery(window).width();
 
   function featureSlider() {
-    var $featureslide = jQuery('.features-inner');
+    var $featureslide = jQuery('.features-inner, .features-two-inner');
     var featurelist = $featureslide.children().length;
     if (windowWidth <= 1023) {
 
@@ -236,7 +236,7 @@ jQuery(document).ready(function () {
     }
   }
   featureSlider();
-  
+
 
   jQuery(window).on('resize load', function () {
     var newScreenWidth = jQuery(window).width();
@@ -246,7 +246,6 @@ jQuery(document).ready(function () {
     }
   });
   /* End of features slider */
-
 
 
   /* people  Slider */
@@ -279,7 +278,7 @@ jQuery(document).ready(function () {
     }
   }
   peopleslider();
-  
+
 
   jQuery(window).on('resize load', function () {
     var newScreenWidth = jQuery(window).width();
@@ -291,8 +290,7 @@ jQuery(document).ready(function () {
   /* End of people slider */
 
 
-
-    /* resource  Slider */
+  /* resource  Slider */
   var windowWidth = jQuery(window).width();
 
   function resourceslider() {
@@ -322,7 +320,7 @@ jQuery(document).ready(function () {
     }
   }
   resourceslider();
-  
+
 
   jQuery(window).on('resize load', function () {
     var newScreenWidth = jQuery(window).width();
@@ -332,10 +330,6 @@ jQuery(document).ready(function () {
     }
   });
   /* End of resource slider */
-
-
-
-  
 
 
   /* Testimonial Slider */
@@ -381,22 +375,21 @@ jQuery(document).ready(function () {
           prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
           nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
           responsive: [{
-              breakpoint: 1290,
-              settings: {
-                slidesToShow: 4,
-                variableWidth: false,
-              }
-            },{
-                       breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                variableWidth: false,
-              }
+            breakpoint: 1290,
+            settings: {
+              slidesToShow: 4,
+              variableWidth: false,
             }
-          ]
+          }, {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              variableWidth: false,
+            }
+          }]
         });
       }
-    } 
+    }
   }
   LogoSlider();
 
@@ -459,6 +452,38 @@ jQuery(document).ready(function () {
       }
     ]
 
+  });
+
+
+  /* Services Slider */
+  jQuery('.sf-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: false,
+    speed: 1000,
+    arrows: false,
+    focusOnSelect: true,
+    asNavFor: '.sf-nav',
+    fade: true,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
+  });
+  jQuery('.sf-nav').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    speed: 1000,
+    focusOnSelect: true,
+    infinite: false,
+    variableWidth: true,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
+    asNavFor: '.sf-for',
+    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
   });
 
 
@@ -536,14 +561,13 @@ function statsSlider() {
     adaptiveHeight: true,
     prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
-      responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          
-        }
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+
       }
-    ]
+    }]
   });
 }
 jQuery(statsSlider);

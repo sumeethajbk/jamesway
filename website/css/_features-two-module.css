@@ -1,0 +1,22 @@
+
+
+@media only screen and (max-width:1023px) and (min-width: 768px) {
+
+}
+
+
+@media only screen and (max-width:1023px) and (min-width: 200px) {
+
+
+
+}
+
+@media only screen and (max-width:767px) and (min-width: 200px) {
+/* Features Two */
+.features-two-inner{display: flex; gap: 35px; flex-direction: column; padding: 40px 0;}
+.featues-two-icon {margin-bottom: 22px;}
+.features-two-grid .h4 { margin-bottom: 8px; font-size: 1.5rem;}
+
+.features-two-grid.slick-slide {flex: 0 0 333px;}
+
+}
