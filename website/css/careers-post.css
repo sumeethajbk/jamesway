@@ -56,6 +56,10 @@
 .frm_dropzone.frm_single_upload.frm_clearfix.dz-clickable .frm_upload_text { display: none; }
 .frm_dropzone.frm_single_upload.frm_clearfix.dz-clickable  .dz-message {border: none;}
 .frm_dropzone.frm_single_upload.frm_clearfix.dz-clickable  .frm_small_text{display: none;}
+.with_frm_style .frm_form_field:not(.frm_compact) .frm_dropzone .frmsvg {display: none!important;}
+
+.dz-message.needsclick::before { position: absolute; background-image: url("../images/download-icon.svg"); width: 30px; height: 30px; display: block; top: 12px; right: 5px; content: ""; background-repeat: no-repeat;
+}
 
 /*-- media css starts here --*/
 @media only screen and (max-width:1299px) and (min-width:1150px) {

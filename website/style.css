@@ -175,8 +175,8 @@ img.mobile {display:none;}
 .iframe-container {overflow: hidden; padding-top: 56.25%; /* 16:9*/ position: relative;}
 .iframe-container iframe {border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;}
 
-body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {padding-right: 0; width: 40px;height: 40px; opacity: 1;line-height: 40px; top: -45px; background-color: var(--cerulean); right: -45px; display: flex; align-items: center; justify-content: center; border-radius: 6px;}
-body .mfp-image-holder .mfp-close:hover, body .mfp-iframe-holder .mfp-close:hover {background-color: var(--brand-green); color: var(--brand-mint);}
+body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {padding-right: 0; width: 40px;height: 40px; opacity: 1;line-height: 40px; top: -45px; background-color: var(--navys); right: -45px; display: flex; align-items: center; justify-content: center; border-radius: 6px; right: 0;}
+body .mfp-image-holder .mfp-close:hover, body .mfp-iframe-holder .mfp-close:hover {background-color: var(--yellow); color: var(--navy);}
 body .mfp-close:after {display: none;}
 body .mfp-iframe-holder button.mfp-close::before{left:0;} 
 
@@ -411,7 +411,7 @@ position: relative; z-index: 1; text-decoration: none; border-radius:10px!import
     .btn-center {margin: 24px 0 0 0;}
     
     .play-btn, .play-btn::before, .play-btn::after {width: 50px; height: 50px;}
-	.play-btn span {width: 17px; height: 15px;}
+	.play-btn span {width: 17px; height: 15px; line-height: 15px;}
     
 
     .fluid-width {margin-bottom: 20px;}

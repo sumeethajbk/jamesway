@@ -488,6 +488,38 @@ function toggleSlider() {
 jQuery(toggleSlider);
 jQuery(window).on('resize', toggleSlider);
 
+
+/* about-stats Slider */
+function aboutstatsSlider() {
+  var s = jQuery('.about-stats-slider');
+  if (s.hasClass('slick-initialized')) s.slick('unslick');
+  if (s.children().length > 2) s.slick({
+    slidesToShow: 2,
+    dots: false,
+    arrows: true,
+    speed: 1000,
+    variableWidth: true,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
+    adaptiveHeight: true,
+    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+      responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        }
+      }
+    ]
+  });
+}
+jQuery(aboutstatsSlider);
+jQuery(window).on('resize', aboutstatsSlider);
+
+
+
 /* Stats Slider */
 function statsSlider() {
   var s = jQuery('.stats-slider');

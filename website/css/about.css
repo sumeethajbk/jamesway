@@ -5,10 +5,10 @@
 @import url("_logo-slider.css");
 @import url("_repeater-section.css");
 @import url("_testimonial-module.css");
-
+@import url("_about-stats-module.css");
 @import url("_featured-res-module.css");
 @import url("_signup-module.css");
-
+@import url("_about-stats.css");
 
 .default-banner-main{min-height: 780px; align-items:flex-end;}
 .default-banner-main .default-banner-text p {font-size: 1.25rem; font-weight: 400;}
@@ -30,4 +30,16 @@
 .logo-slider-main { background-color:  var(--brandbook-gray-light);}
 .logo-slider-main{background-image: inherit;}
 
-.logo-slider-module {padding: 40px 0; background-color: var(--white);}
+.logo-slider-module {padding: 50px 0 40px; background-color: var(--white);}
+
+
+
+@media only screen and (max-width: 767px) and (min-width:200px){
+
+
+.default-banner-main .default-banner-text { margin-bottom: 40px; }
+.logo-slider-main { background-color: inherit }
+.logo-slider-module { padding: 0;}
+
+
+}
