@@ -1,0 +1,33 @@
+@import url("_default-banner.css");
+@import url("_counter-section.css");
+@import url("_repeater-section.css");
+@import url("_location-module.css");
+@import url("_logo-slider.css");
+@import url("_repeater-section.css");
+@import url("_testimonial-module.css");
+
+@import url("_featured-res-module.css");
+@import url("_signup-module.css");
+
+
+.default-banner-main{min-height: 780px; align-items:flex-end;}
+.default-banner-main .default-banner-text p {font-size: 1.25rem; font-weight: 400;}
+.default-banner-main .default-banner-text .optional-text { font-size: 1.25rem; font-weight: 700;}
+.default-banner-main .default-banner-text{margin-bottom: 92px;}
+
+
+.counter-list span{color: var(--white);}
+.counter-main-wrap{color: var(--yellow);}
+.counter-stats:only-child { padding-bottom: inherit; }
+
+
+.repeater-section.row-reverse .repeater-list{flex-direction: row-reverse; }
+.repeater-main {background-color: var(--white);}
+
+.locations-txt p {font-weight: 400;}
+.loc-wrap .button{width: 100%;}
+
+.logo-slider-main { background-color:  var(--brandbook-gray-light);}
+.logo-slider-main{background-image: inherit;}
+
+.logo-slider-module {padding: 40px 0; background-color: var(--white);}
