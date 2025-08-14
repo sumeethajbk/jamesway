@@ -208,7 +208,7 @@ ul.slick-dots li.slick-active button {opacity:1;}
 
 
 #blog_list{margin: 0;}
-.btn-center{position: relative; z-index: 1; width: 100%; text-align: center; margin:43px 0 0 0; display: flex; justify-content: center; align-items: center; clear: both;}
+.btn-center{position: relative; z-index: 1; width: 100%; text-align: center; margin:32px 0 0 0; display: flex; justify-content: center; align-items: center; clear: both;}
 .btn-center .button {min-width: inherit; margin: 0 8px; white-space: nowrap;}
 .btn-center:before, .btn-center:after {content: ""; height: 2px; width: 100%; display:inline-block; vertical-align: middle; background: var(--brand-blue);}
 

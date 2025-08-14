@@ -62,6 +62,95 @@ jQuery(document).ready(function () {
     jQuery(".accordion-item .content").not(jQuerycontent).slideUp("800");
   });
 
+
+  jQuery(document).ready(function () {
+  jQuery('.resource-list-nav li a').on('click', function (e) {
+    e.preventDefault();
+
+    var target = jQuery(jQuery(this).attr('href'));
+    if (target.length) {
+      var headerHeight = jQuery('.main_header').outerHeight(true);
+      var scrollTo = target.offset().top - headerHeight;
+
+      jQuery('html, body').animate({
+        scrollTop: scrollTo
+      }, 600);
+    }
+  });
+
+  if (jQuery(window).width() <= 767) {
+    jQuery(document).on('click', '.heading_mobile_menu', function (e) {
+      e.preventDefault();
+      jQuery(this).toggleClass('active');
+      jQuery('ul.resource-list-nav').slideToggle();
+    });
+
+    jQuery(document).on('click', '.resource-list-nav li a', function (e) {
+      e.preventDefault();
+      jQuery('.heading_mobile_menu').html(jQuery(this).html()).removeClass('active');
+      jQuery('ul.resource-list-nav').slideUp();
+
+      var href = jQuery(this).attr('href');
+      if (href && href !== '#') window.location.href = href;
+    });
+  }
+
+  /* Bottom Popup Slide*/
+$(window).on('load', function () {
+  if (window.location.href.indexOf("snap-tracker-knowledge-centre") > -1) {
+    if ($('.overlay_main_sec').length > 0) {
+      jQuery('body').addClass('pull_bottom');
+      jQuery("html").addClass("no-scroll");
+      jQuery('.overlay_main_sec').addClass('active');
+      console.log("Showing popup");
+    } else {
+      // Clean up any stuck scroll block
+      jQuery('body').removeClass('pull_bottom');
+      jQuery('html').removeClass('no-scroll');
+      console.log("Popup skipped (cookie exists)");
+    }
+  }
+});
+
+
+  jQuery('.pop_close').on('click', function (e) {
+    e.preventDefault();
+    window.location.href = 'https://stg-kispincl-stage.kinsta.cloud/';
+  });
+
+  jQuery("#requestFormhandler").on('click', function (e) {
+    e.preventDefault();
+    jQuery('.frm_forms.login-form').hide();
+    jQuery('.request-form').show();
+  });
+
+    jQuery("#loginFormhandler").on('click', function (e) {
+    e.preventDefault();
+    jQuery('.request-form').hide();
+     jQuery('.frm_forms.login-form').show();
+  });
+  
+  // If login_error is present, remove it after showing the message once
+  if (window.location.href.indexOf("login_error=1") > -1) {
+    const url = new URL(window.location.href);
+    url.searchParams.delete("login_error");
+
+    // Use replaceState so it doesn't reload
+    window.history.replaceState({}, document.title, url.pathname + url.search);
+  }
+
+if ($('.request-form .frm_error').length > 0) {
+  $('.login-form').hide();
+  $('.request-form').show();
+  $("#frm_error_field_z7nvv").addClass("show_error");
+}
+if ($('.request-form .frm_message').length > 0) {
+   $('.login-form').hide();
+  $('.request-form').show();
+   $(".frm_message").addClass("show_message");
+}
+});
+
   
   /* CTA Form */
   jQuery('.frm_form_field input, .frm_form_field textarea').on('input focus', function () {

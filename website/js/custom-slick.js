@@ -292,6 +292,49 @@ jQuery(document).ready(function () {
 
 
 
+    /* resource  Slider */
+  var windowWidth = jQuery(window).width();
+
+  function resourceslider() {
+    var $resourceslide = jQuery('.resource-list-btm');
+    var resourcelist = $resourceslide.children().length;
+    if (windowWidth <= 1023) {
+
+      $resourceslide.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 2000,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
+        draggable: true,
+        swipeToSlide: true,
+        touchThreshold: 100,
+        autoplay: false,
+        autoplaySpeed: 0,
+        adaptiveHeight: true,
+        cssEase: 'linear',
+      });
+
+    } else {
+
+    }
+  }
+  resourceslider();
+  
+
+  jQuery(window).on('resize load', function () {
+    var newScreenWidth = jQuery(window).width();
+    if (newScreenWidth !== windowWidth) {
+      windowWidth = newScreenWidth;
+      resourceslider();
+    }
+  });
+  /* End of resource slider */
+
+
+
   
 
 
