@@ -91,7 +91,7 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
 .main_header .container-lg {padding:0 23px;}
 .main_header .logo {width:162px; height:34px;}
 
-.toggle_button {position: absolute; flex-direction: column; width: 56px; right: -20px; height:56px; cursor: pointer; top: 0; bottom: 0; margin: auto; display: block!important; text-align: center; background: var(--brand-mint);}
+.toggle_button {position: absolute; flex-direction: column; width: 56px; right: -20px; height:56px; cursor: pointer; top: 0; bottom: 0; margin: auto; display: block!important; text-align: center;}
 .toggle_button span {display: block; position: absolute; top: 50%; transform: translateY(-50%); transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; left: 0; right: 0; font-size: 1.25rem; color: var(--brand-green); line-height: 1;}
 .toggle_button span:nth-child(2){opacity: 0;}
 .toggle_button.active span:nth-child(1){opacity: 0;}
@@ -101,8 +101,8 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
 .menu-open .toggle_button span {color: var(--white);}
 
 
-.main_header .header_right.mobile_menu {display: block; padding:16px 0 32px 0; width: 100%; height:auto; top:56px; left: 0; bottom: 0; position: fixed; background: var(--brand-mint); overflow-y: auto; -webkit-overflow-scrolling: touch; transition: .5s ease-in-out; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; z-index:1; opacity: 0; visibility: hidden; margin: 0; text-align: left; overflow-x: hidden;}
-.main_header .header_right.navOpen {opacity: 1; visibility: visible;}
+.main_header .header_right.mobile_menu {display: block; padding:16px 0 32px 0; width: 100%; height:auto; top:56px; right:-100%; bottom: 0; position: fixed; overflow-y: auto; -webkit-overflow-scrolling: touch; transition: .5s ease-in-out; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; z-index:1; margin: 0; text-align: left; overflow-x: hidden; background: var(--navy); text-align: right;}
+.main_header .header_right.navOpen {right: 0;}
 
 .mobile_menu {width: 100%; display: block;} 
 .mobile_menu ul.main_menu {margin: 0;} 
@@ -110,49 +110,23 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
 /* Level 1 */
 .mobile_menu ul.main_menu>li {display: block; margin: 0; } 
 .mobile_menu ul.main_menu li:first-child {margin-top: 0!important;}
-.mobile_menu ul.main_menu li.menu-item-has-children>a:after {content: "\2b"; font-family: 'Font Awesome 6 Sharp'; font-weight: 400; font-size: 1.75rem;  right: 0; top: 0; transform: none; margin: auto; position: absolute; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; color: var(--brand-blue); line-height: 1; text-shadow: 2px 2px 0 var(--white); width:72px; display: flex; justify-content: center; height: 56px; bottom: 0; align-items: center;} 
+/*
+.mobile_menu ul.main_menu li.menu-item-has-children>a:after {content: "\2b"; font-family: 'Font Awesome 6 Sharp'; font-weight: 400; font-size: 1.75rem;  right: 0; top: 0; transform: none; margin: auto; position: absolute; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; color: var(--white); line-height: 1; width:72px; display: flex; justify-content: center; height: 56px; bottom: 0; align-items: center;} 
 .mobile_menu ul.main_menu li.menu-item-has-children>a.active:after {content: "\f068";} 
+*/
 .mobile_menu ul.main_menu li:before {display: none;} 
 
 .mobile_menu ul.main_menu li a {font-weight: 900; font-family: 'Correct XXX Condensed', sans-serif; text-transform: uppercase;}
-.mobile_menu ul.main_menu>li>a {display: block; position: relative; box-sizing: border-box; color:var(--base-foreground);padding:18px 56px 12px 24px; font-weight: 900; font-family: 'Correct XXX Condensed', sans-serif; text-transform: uppercase; font-size: 1.75rem; line-height: 100%; letter-spacing: 0.56px; border-top:2px solid var(--white);} 
-.mobile_menu ul.main_menu>li>a:after {content: "\f061"; font-family: 'Font Awesome 6 Sharp'; font-weight: 400; font-size: 1.75rem;  right: 0; top: 0; transform: none; margin: auto; position: absolute; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; color: var(--brand-blue); line-height: 1; text-shadow: 2px 2px 0 var(--white); width:72px; display: flex; justify-content: center; height: 56px; bottom: 0; align-items: center;}
-.mobile_menu ul.main_menu>li a:hover {color: var(--brand-blue);} 
+.mobile_menu ul.main_menu>li>a {display: block; position: relative; box-sizing: border-box; color:var(--white);padding:18px 56px 12px 24px; font-weight: 900;  text-transform: uppercase; font-size: 1.75rem; line-height: 100%; letter-spacing: 0.56px;} 
+/*.mobile_menu ul.main_menu>li>a:after {content: "\f061"; font-family: 'Font Awesome 6 Sharp'; font-weight: 400; font-size: 1.75rem;  right: 0; top: 0; transform: none; margin: auto; position: absolute; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; color: var(--brand-blue); line-height: 1; text-shadow: 2px 2px 0 var(--white); width:72px; display: flex; justify-content: center; height: 56px; bottom: 0; align-items: center;}*/
+.mobile_menu ul.main_menu>li a:hover {color: var(--yellow);} 
 .mobile_menu ul.main_menu>li:first-child>a {border: 0 none;}
 
 /* Level 2 */
-.mobile_menu ul.main_menu li > ul {display: none; margin:0; position: relative; background: var(--white); padding: 6px 0 0 0;} 
+.mobile_menu ul.main_menu li > ul {display: none; margin:0; position: relative;} 
 .mobile_menu ul.main_menu li ul li {margin: 6px 0 0 0;} 
-.mobile_menu ul.main_menu li ul li a {display: block; position: relative; padding:13px 24px; font-size: 1.25rem; letter-spacing: 0.4px; line-height: 1; color: var(--brand-green);}
-.mobile_menu ul.main_menu li ul li a:hover {color: var(--brand-blue)!important;}
-.mobile_menu ul.main_menu > li.flex-menu > ul {padding: 0;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li > ul {display: block!important; margin: 0; padding: 4px 0 0 0;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li.flex-menu-child {display: none;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li {font-size: 0; margin: 0;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li .inline-underline-wrp, .mobile_menu ul.main_menu > li.flex-menu > ul > li .menu-shadow {display: none;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li ul li {display: flex; flex-wrap: wrap; gap:0 16px; line-height: normal; margin: 6px 0 0 0;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li ul li a {font-size: 1.25rem; letter-spacing: 0.4px; line-height: 1; color: var(--brand-green); padding-left: 58px; width: 100%;}
-ul.main_menu li.flex-menu .menu-icon {width:20px; height: 20px; position: absolute; left: 24px; top: 13px;}
-ul.main_menu li.flex-menu .menu-icon figure {line-height: normal; text-align: center;}
-ul.main_menu li.flex-menu .menu-icon figure img {width: auto; height: auto; max-height: 20px;}
-ul.main_menu li.flex-menu .h5 {margin: 0; width: 100%;}
+.mobile_menu ul.main_menu li ul li a {display: block; position: relative; padding:13px 24px; font-size: 1.25rem; letter-spacing: 0.4px; line-height: 1; color: var(--white); text-transform: none;}
 
-.mobile_menu ul.main_menu > li.flex-menu > ul > li.kisp-items ul {padding: 18px 0 14px 0;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li.kisp-items ul li {margin: 32px 0 0 0;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li.kisp-items ul li .kisp-type {width: 100%; margin: 0;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li.kisp-items ul li .kisp-type span {padding: 12px 16.5px;}
-.mobile_menu ul.main_menu > li.flex-menu > ul > li.kisp-items ul li .kisp-type a {display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 0 24px; font-size: 1rem; font-weight: bold; font-family: "Neue Haas Unica Pro", sans-serif; text-transform: none; letter-spacing: normal; color: var(--base-foreground);}
-
-.mobile_menu .header-btns {width: 100%; margin: 2px 0 0 0;}
-.mobile_menu .header-btns .button {background: var(--brand-blue); display: block; text-align: left; color: var(--white); font-weight: 900; font-family: 'Correct XXX Condensed', sans-serif; text-transform: uppercase; font-size: 1.75rem; padding:18px 56px 14px 24px; letter-spacing: 0.56px;}
-.mobile_menu .header-btns .button:after {content: "\f27a"; font-family: 'Font Awesome 6 Sharp'; font-weight: 400; font-size: 1.75rem;  right: 0; top: 0; transform: none; margin: auto; position: absolute; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; color: var(--brand-mint); line-height: 1; text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.15); width:76px; display: flex; justify-content: center; height: 56px; bottom: 0; align-items: center;}
-.mobile_menu .header-btns .button:hover {transform: none; box-shadow: none; color: var(--brand-mint);}
-
-ul.main_menu li.flex-menu > ul > li.display-none {display: none!important;}
-
-ul.main_menu li#menu-item-1136 {padding: 20px 0 11px;}
-ul.main_menu li#menu-item-1136 a {padding: 0 24px; font-size: 1rem; font-weight: bold; font-family: "Neue Haas Unica Pro", sans-serif; text-transform: none;
-letter-spacing: normal; color: var(--base-foreground);}
 
 html.no-scroll {overflow:hidden;}
 }

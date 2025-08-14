@@ -3,6 +3,7 @@
 .intro-lt {max-width:394px; width: 100%;}
 .intro-lt:only-child {max-width: 100%; flex-grow: 1;}
 .intro-lt h2 {margin: 0;}
+.intro-lt .button {margin-top: 72px;}
 .intro-rt {flex: 1; font-weight: 500; font-size: 1.25rem; line-height: 1.4; letter-spacing: normal;}
 
 
