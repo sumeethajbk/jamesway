@@ -9,6 +9,9 @@
 @import url("_featured-res-module.css");
 @import url("_signup-module.css");
 @import url("_about-stats.css");
+@import url("_features-module.css");
+
+/* @import url("_features-two-module.css"); */
 
 .default-banner-main{min-height: 780px; align-items:flex-end;}
 .default-banner-main .default-banner-text p {font-size: 1.25rem; font-weight: 400;}
