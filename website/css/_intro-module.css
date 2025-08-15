@@ -9,13 +9,19 @@
 
 
 /* Responsive */
+@media only screen and (max-width:1023px) and (min-width:200px){
+	.intro-main {gap:26px;}
+}
+
+
 @media only screen and (max-width:1023px) and (min-width:768px){
 	.intro-lt {max-width:348px;}
+    .intro-lt .button {margin-top:40px;}
+
 }
 
 @media only screen and (max-width: 767px) and (min-width:200px){
 	.intro-module {padding: 30px 0;}
-	.intro-main {gap:26px;}
 	.intro-lt {max-width:100%;}
 	.intro-rt {font-size: 1rem; line-height: 1.5; font-weight: bold;}
 }

@@ -210,7 +210,7 @@ jQuery(document).ready(function () {
   var windowWidth = jQuery(window).width();
 
   function featureSlider() {
-    var $featureslide = jQuery('.features-inner, .features-two-inner');
+    var $featureslide = jQuery('.features-inner, .features-two-inner, .features-three-inner');
     var featurelist = $featureslide.children().length;
     if (windowWidth <= 1023) {
 
